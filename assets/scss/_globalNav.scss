@@ -41,7 +41,21 @@ nav {
 
   ul {
     display: none;
+    opacity: 0;
   }
+
+  &:hover {
+
+    ul {
+      display: block;
+      opacity: 1;
+      position: absolute;
+      margin-left: -27px;
+      top: 50%;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+
 }
 
 .dropdownList {
@@ -52,9 +66,8 @@ nav {
   }
 
   a {
+    padding: .5rem;
     background: $greenBlack;
-    margin: 1rem;
-    padding: .5rem 1rem;
     border-radius: 20px;
     display: block;
   }
