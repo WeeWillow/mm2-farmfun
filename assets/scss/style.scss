@@ -1,0 +1,31 @@
+// typography
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Style-sheet import
+@import "globalNav", "footer";
+
+// Variables
+:root {
+  // colours
+$primaryGreen: #679578;
+$primaryGreen70: rgba(103, 149, 120,0.7);
+$secondaryGreen: #B9C879;
+$secondaryGreen70: rgb(185, 200, 121,0.7);
+$accent: #FFB780;
+$accentHover: #FF9940;
+$greenBlack: #1A4A3F;
+$white: #F2F2F2;
+$greenGradient: linear-gradient(#B9C879, #679578);
+$generalBackground: #CBD5CF;
+// sizings
+
+// text
+$breadText: 1rem;
+$headingText: 4rem;
+$subheadingText: 2rem;
+}
+
+// general styling
+* {
+  box-sizing: border-box;
+}
