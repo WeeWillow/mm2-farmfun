@@ -1,0 +1,61 @@
+
+nav {
+  background: $primaryGreen70;
+  backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
+  display: flex;
+  height: 8vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 70px;
+  }
+
+  ul {
+    list-style: none;
+    color: $white;
+    display: flex;
+    gap: 1rem;
+
+    li {
+      justify-content: space-between;
+
+      a {
+        padding: 1rem;
+        color: $white;
+        text-decoration: none;
+        // display: block;
+      }
+
+      span {
+        padding: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.dropdown {
+
+  ul {
+    display: none;
+  }
+}
+
+.dropdownList {
+
+
+  li {
+    margin: 1.5rem;
+  }
+
+  a {
+    background: $greenBlack;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    display: block;
+  }
+}
