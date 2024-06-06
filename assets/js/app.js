@@ -1,7 +1,7 @@
-const bodyElement = document.querySelector('body');
-const newNav = document.createElement('nav');
+const navElement = document.querySelector('nav');
 
 // create nav in body
+// set content for nav
 const navContent = `
 <div class="navLeft">
       <a href="./index.html"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a>
@@ -37,6 +37,4 @@ const navContent = `
     </ul>
 `;
 // set innerHTML to navContent
-newNav.innerHTML = navContent;
-// append newNav to body
-bodyElement.appendChild(newNav);
+navElement.innerHTML = navContent;
