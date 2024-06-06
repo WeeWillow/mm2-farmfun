@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-// Style-sheet import
-@import "globalNav", "footer";
 
 // general styling
 * {
@@ -13,3 +11,10 @@
   margin: 0;
   padding: 0;
 }
+
+
+
+
+
+// Style-sheet import - HAS TO BE LAST IN THE FILE!
+@import "globalNav", "footer";

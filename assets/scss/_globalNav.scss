@@ -3,14 +3,14 @@ nav {
   background: $primaryGreen70;
   backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
   display: flex;
-  height: 8vh;
+  height: 10vh;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   img {
-    height: 70px;
+    max-height: 100px;
   }
 
   ul {
@@ -26,7 +26,10 @@ nav {
         padding: 1rem;
         color: $white;
         text-decoration: none;
-        // display: block;
+
+        &:hover {
+          color: $accentHover;
+        }
       }
 
       span {
@@ -55,20 +58,38 @@ nav {
       transition: opacity 0.2s ease-in-out;
     }
   }
-
+  .dropdownList {
+  
+  
+    li {
+      margin: 1.5rem;
+    }
+  
+    a {
+      padding: .5rem;
+      background: $greenBlack;
+      border-radius: 20px;
+      display: block;
+    }
+  }
 }
 
-.dropdownList {
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 
+  div {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $secondaryGreen;
+    border-radius: 50%;
 
-  li {
-    margin: 1.5rem;
-  }
-
-  a {
-    padding: .5rem;
-    background: $greenBlack;
-    border-radius: 20px;
-    display: block;
+    i {
+      color: $greenBlack;
+    }
   }
 }
