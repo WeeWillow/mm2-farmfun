@@ -1,4 +1,5 @@
 const navElement = document.querySelector('nav');
+const footerElement = document.querySelector('footer')
 
 // create nav in body
 // set content for nav
@@ -38,3 +39,20 @@ const navContent = `
 `;
 // set innerHTML to navContent
 navElement.innerHTML = navContent;
+
+const footerContent = `
+<div class="footLinks">
+      <ul>
+        <li><a href="./omFarmFun.html">Om Farm Fun</a></li>
+        <li><a href="./praktiskInformation.html">Praktisk Information</a></li>
+        <li><a href="./aabningsTider.html">&Aring;bningstider</a></li>
+        <li><a href="./sponsorat.html">Sponsorat</a></li>
+      </ul>
+    </div>
+    <div class="footIcons">
+      <a href="https://www.facebook.com/FarmFun.VedAalbaek"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/farmfunsjov/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+      <a href="./kontakt.html"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <div class="footLogo"><a href="./index.html"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a></div>
+`;
