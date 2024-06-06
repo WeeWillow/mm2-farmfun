@@ -50,8 +50,8 @@ const footerContent = `
       </ul>
     </div>
     <div class="footIcons">
-      <a href="https://www.facebook.com/FarmFun.VedAalbaek"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com/farmfunsjov/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/FarmFun.VedAalbaek" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/farmfunsjov/?hl=en" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
       <a href="./kontakt.html"><i class="fa-solid fa-envelope"></i></a>
     </div>
     <div class="footLogo"><a href="./index.html"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a></div>
