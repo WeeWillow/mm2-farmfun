@@ -4,7 +4,7 @@ nav {
   backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
   display: flex;
   height: 10vh;
-  padding: 3rem 3rem;
+  padding: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,6 +91,7 @@ nav {
       background: $greenBlack;
       border-radius: 20px;
       display: block;
+      
 
       &:hover {
         color: $greenBlack;
@@ -113,6 +114,11 @@ nav {
     align-items: center;
     background: $secondaryGreen;
     border-radius: 50%;
+
+    a {
+      text-decoration: none;
+      display: flex;
+    }
 
     &:hover {
       transition: 0.2s ease-in-out;
