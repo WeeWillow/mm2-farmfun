@@ -1,4 +1,9 @@
 nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   font-family: "overpass", sans-serif;
   background: $primaryGreen70;
   backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
