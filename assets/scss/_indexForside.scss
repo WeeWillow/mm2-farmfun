@@ -9,4 +9,57 @@ header {
   margin: auto;
   padding: 2rem 0;
   width: 80vw;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 600px;
+  };
+}
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .headerBtns {
+    display: flex;
+    gap: 1rem;
+    font-family: 'overpass', sans-serif;
+    
+    span {
+      text-transform: uppercase;
+      color: $greenBlack;
+    }
+  
+    div {
+      border-radius: 18px;
+      width: 150px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+  
+    .aabningstiderBtn {
+      background: $secondaryGreen;
+    }
+  
+    .koebBilletBtn {
+      background: $accent;
+    }
+  }
+
+  .openToday {
+
+    h3 {
+      font-family: 'overpass', sans-serif;
+    }
+
+    span {
+      font-family: 'fredoka', sans-serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
 }
