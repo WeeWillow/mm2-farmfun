@@ -13,18 +13,28 @@
 }
 
 body {
-  background: $generalBackground;
+  background: $primaryGreen;
+  margin-top: 11vh;
+}
+
+header {
+  background: $greenGradient;
 }
 
 main {
+  padding: 6vh 0;
+  background: $generalBackground;
+}
+
+.mainContent {
   margin: 0 auto;
   width: 80vw;
-  padding: 16vh 0 6vh 0;
 }
+
 
 
 
 
 
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
-@import "globalNav", "footer";
+@import "globalNav", "footer", "indexForside";
