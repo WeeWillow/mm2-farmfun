@@ -22,13 +22,12 @@ nav {
     list-style: none;
     color: $white;
     display: flex;
-    gap: 1.5rem;
-
+    
     li {
-      justify-content: space-between;
-
+      margin: .5rem;
+      
       a {
-        padding: 1rem;
+        padding: .5rem;
         color: $white;
         text-decoration: none;
 
@@ -44,7 +43,7 @@ nav {
       }
 
       span {
-        padding: 1rem;
+        padding: .5rem;
         cursor: pointer;
       }
     }
