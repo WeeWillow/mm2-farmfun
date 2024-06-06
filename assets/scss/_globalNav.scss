@@ -1,10 +1,11 @@
 
 nav {
+  font-family: "overpass";
   background: $primaryGreen70;
   backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
   display: flex;
   height: 10vh;
-  padding: 2rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +18,7 @@ nav {
     list-style: none;
     color: $white;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 
     li {
       justify-content: space-between;
@@ -28,7 +29,13 @@ nav {
         text-decoration: none;
 
         &:hover {
+          transition: 0.1s ease-in-out;
           color: $accentHover;
+
+          i {
+            transition: 0.1s ease-in-out;
+            color: $secondaryGreen;
+          }
         }
       }
 
@@ -48,21 +55,36 @@ nav {
   }
 
   &:hover {
+    transition: 0.1s ease-in-out;
 
     ul {
       display: block;
       opacity: 1;
       position: absolute;
-      margin-left: -27px;
       top: 50%;
       transition: opacity 0.2s ease-in-out;
     }
+
+    span {
+      transition: 0.1s ease-in-out;
+      color: $accentHover;
+    }
+
+    i {
+      transition: 0.1s ease-in-out;
+      color: $secondaryGreen;
+    }
+
+    .fa-angle-down {
+      transition: 0.1s ease-in-out;
+      color: $accentHover;
+    }
   }
+
   .dropdownList {
   
-  
     li {
-      margin: 1.5rem;
+      margin: 1rem 0;
     }
   
     a {
@@ -70,6 +92,11 @@ nav {
       background: $greenBlack;
       border-radius: 20px;
       display: block;
+
+      &:hover {
+        color: $greenBlack;
+        background: $accentHover;
+      }
     }
   }
 }
@@ -83,12 +110,20 @@ nav {
     height: 2rem;
     width: 2rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background: $secondaryGreen;
     border-radius: 50%;
 
+    &:hover {
+      transition: 0.2s ease-in-out;
+      background: $accentHover;
+      cursor: pointer;
+    }
+
     i {
+      margin: 0;
+      padding: 0;
       color: $greenBlack;
     }
   }
