@@ -1,0 +1,69 @@
+.activityCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.activityCards a {
+  text-decoration: none;
+  color: #1a4a3f;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.activityCards article {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.activityCards img {
+  width: 800px;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.activityCards h2 {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 0 10px;
+  text-align: left;
+}
+
+//Knap nederst på siden
+
+.map-sektion {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.map-sektion h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #1a4a3f;
+}
+
+.map-btn {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #1a4a3f;
+  background-color: #ffb780;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.map-btn:hover {
+  background-color: #fb872f;
+}

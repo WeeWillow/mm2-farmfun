@@ -1,9 +1,7 @@
 @use "./variables" as *;
 
 // typography
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
 // general styling
 * {
@@ -31,10 +29,5 @@ main {
   width: 80vw;
 }
 
-
-
-
-
-
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
-@import "globalNav", "footer", "indexForside";
+@import "globalNav", "footer", "indexForside", "aktiviteter";
