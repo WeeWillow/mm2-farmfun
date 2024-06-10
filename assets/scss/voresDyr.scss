@@ -1,0 +1,65 @@
+.animalCards img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.animalCards a {
+  text-decoration: none;
+}
+
+.animalCards h2 {
+  margin-top: 0.5rem;
+  color: #1a4a3f;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Animal Overview */
+
+.animalCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+  gap: 1rem;
+}
+
+/* Animal cards */
+@media screen and (max-width: 700px) {
+  .animalCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .animalCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Sorteringsknapper*/
+.sortingKnapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.sorteringsBtn {
+  background-color: #ffb780;
+  border: none;
+  color: #1a4a3f;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.sorteringsBtn:hover {
+  background-color: #ffa726;
+}
