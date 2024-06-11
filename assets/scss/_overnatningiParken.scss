@@ -1,0 +1,16 @@
+#two-one-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 40px;
+    padding: 40px;
+    width: 100vw;
+   
+}
+#one-two-grid{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 40px;
+    padding: 40px;
+    width: 100vw;
+    
+}
