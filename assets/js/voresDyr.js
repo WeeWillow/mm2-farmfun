@@ -35,10 +35,10 @@ const displayPosts = () => {
     img.src = post.acf.billede_af_dyr.url;
     img.alt = post.title.rendered;
     h2.innerHTML = post.title.rendered;
-    link.href = "#"; // Link til enkelte dyreside
+    link.href = `enkeltDyr.html?id=${post.id}`;
+
     link.appendChild(img);
     link.appendChild(h2);
-
     article.appendChild(link);
     animalCards.appendChild(article);
   });
