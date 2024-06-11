@@ -1,0 +1,85 @@
+
+
+.localNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-right: 20vh;
+    height: 100vh;
+    border-radius: 10px;
+}
+  
+.localNav a {
+    color: $primaryGreen;
+    text-decoration: none;
+    margin: 1.5rem;
+}
+  
+.omFarmFunIntrowrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    margin: 5rem;
+}
+  
+.omFarmFunIntrowrapper div {
+    grid-column: 2 / span 1; 
+    grid-row: 1 / -4; 
+}
+  
+.omFarmFunIntrowrapper div h2 {
+    font-size: $headingText;
+    padding-bottom: 2rem;
+}
+  
+.omFarmFunIntrowrapper div h3 {
+    font-size: $subheadingText;
+    padding-bottom: 2rem;
+}
+  
+.omFarmFunIntrowrapper div p {
+    padding-bottom: 2rem;
+}
+  
+.omFarmFunIntrowrapper div p:last-child { 
+    font-size: $breadText;
+}
+  
+.omFarmFunIntrowrapper div p:nth-of-type(1) {
+    font-size: 25px;
+}
+  
+.omFarmFunHistory article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+  
+.omFarmFunHistory h4,
+.omFarmFunSummary h4 {
+    font-size: $subheadingText;
+    margin-left: 2rem;
+}
+  
+.omFarmFunHistory p,
+.omFarmFunSummary p {
+    font-size: $breadText;
+    padding: 2rem;
+}
+  
+.omFarmFunHistory li {
+    margin: 0 3rem 0;
+}
+  
+.omFarmFunHistory img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+  
+.omFarmFunSummary {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
