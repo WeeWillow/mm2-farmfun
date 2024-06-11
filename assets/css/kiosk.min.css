@@ -1,1 +1,1 @@
-/*# sourceMappingURL=kiosk.min.css.map */
+.foodCards{display:grid;grid-template-columns:repeat(2, 1fr);gap:15px;justify-content:center;padding:20px}.foodCards a{text-decoration:none;color:#1a4a3f;text-align:left;font-size:1.8rem}.foodCards article{border-radius:10px;overflow:hidden;display:flex;flex-direction:column;align-items:center;width:100%}.foodCards img{width:800px;height:400px;display:block;-o-object-fit:cover;object-fit:cover;border-radius:20px}.kioskTekst{text-align:center;color:#1a4a3f}/*# sourceMappingURL=kiosk.min.css.map */
