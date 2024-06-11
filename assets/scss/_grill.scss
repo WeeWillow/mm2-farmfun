@@ -1,0 +1,53 @@
+
+
+.GrillsectionLayout h3 {
+    font-size: $subheadingText;
+    padding: 2rem;
+}
+
+
+#grillLeje {
+    font-size: 25px;
+}
+
+
+
+.GrillsectionLayout {
+    display: flex;
+}
+
+.GrillsectionLayout p {
+    margin: 2rem;
+}
+
+#grillImg {
+    height: 50vh;
+    margin: 2rem;
+
+
+}
+
+.grillTyper {
+    display: flex;
+    font-size: $breadText;
+}
+
+.grillTyper p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    }
+    
+.grillType {
+      width: 40%;
+      padding:  0 8rem 0 0;
+    
+}
+
+.grillTyper span {
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 0.5rem;
+    padding-bottom: 2rem;
+}
