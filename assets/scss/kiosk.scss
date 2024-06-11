@@ -1,40 +1,75 @@
 .foodCards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   padding: 20px;
 }
 
-.foodCards a {
-  text-decoration: none;
-  color: #1a4a3f;
-  text-align: left;
-  font-size: 1.8rem;
-}
-
 .foodCards article {
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .foodCards img {
-  width: 800px;
-  height: 400px;
-  display: block;
+  width: 500px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 20px;
 }
 
+.foodInfo {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $secondaryGreen;
+  min-height: 75px;
+  border-radius: 0 0 20px 20px;
+  color: $greenBlack;
+}
+
+.foodTitle {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.foodDetails {
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.foodDetails .madInformation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foodDetails .madInformation span {
+  margin-left: 5px;
+  min-width: 50px;
+  text-align: right;
+}
+//Kiosk sektionen nederst
 .kioskTekst {
-  text-align: center;
-  color: #1a4a3f;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  color: $greenBlack;
 }
-
+.kioskTekst h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
 .kioskTekst ul {
-    
+  list-style-type: none;
+}
+.kioskTekst ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

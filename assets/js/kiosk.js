@@ -8,52 +8,76 @@ const fetchPosts = () => {
     .then((categories) => {
       if (categories.length > 0) {
         const categoryId = categories[0].id;
-
-        fetch(`${urlBase}posts?categories=${categoryId}&per_page=${perPage}`)
-          .then((res) => res.json())
-          .then((data) => {
-            displayPosts(data);
-          })
-          .catch((err) => console.error("Error fetching posts:", err));
+        return fetch(
+          `${urlBase}posts?categories=${categoryId}&per_page=${perPage}`
+        );
       }
-    });
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      displayPosts(data);
+    })
+    .catch((err) => console.error("Error fetching posts:", err));
 };
 
 const displayPosts = (posts) => {
   const foodCards = document.querySelector(".foodCards");
   foodCards.innerHTML = "";
   posts.forEach((post) => {
+    //Laver først articlen og elementerne i artiklen
     const article = document.createElement("article");
     const img = document.createElement("img");
     const h2 = document.createElement("h2");
-    const ul = document.createElement("ul");
-    const p = document.createElement("p");
-    const p2 = document.createElement("p");
-    const p3 = document.createElement("p");
-    const link = document.createElement("a");
-
-    link.href = post.link;
 
     img.src = post.acf.billede_af_ret.url;
     img.alt = post.title.rendered;
 
+    //Tilføjer klassen foodTitle bare til h2, for at kunne target den i scss
     h2.innerHTML = post.title.rendered;
-    ul.innerHTML = post.acf.storrelse_pa_retten;
-    p.innerHTML = post.acf.singel;
-    p2.innerHTML = post.acf.pris_for_menu;
-    p3.innerHTML = post.acf.pris_for_stor_menu;
+    const titleDiv = document.createElement("div");
+    titleDiv.classList.add("foodTitle");
+    titleDiv.appendChild(h2);
 
-    link.appendChild(img);
-    link.appendChild(h2);
-    link.appendChild(ul);
-    link.appendChild(p);
-    link.appendChild(p2);
-    link.appendChild(p3);
+    //Skaber en ny klasse ved navn foodInfo for at kunne have bare menustørrelse og priser for sig selv
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("foodInfo");
 
-    article.appendChild(link);
+    //Laver en detailsDiv der skal bruges til at kunne til at fjerne priser som ikke har en værdi
+    const detailsDiv = document.createElement("div");
+    detailsDiv.classList.add("foodDetails");
+
+    // Laver if statements om at priser og størrelser uden værdi fjernes
+    if (post.acf.singel) {
+      const p = document.createElement("p");
+      p.innerHTML = "Singel: <span>" + post.acf.singel + "</span>";
+      p.classList.add("madInformation");
+      detailsDiv.appendChild(p);
+    }
+
+    if (post.acf.pris_for_menu) {
+      const p2 = document.createElement("p");
+      p2.innerHTML = "Menu: <span>" + post.acf.pris_for_menu + "</span>";
+      p2.classList.add("madInformation");
+      detailsDiv.appendChild(p2);
+    }
+
+    if (post.acf.pris_for_stor_menu) {
+      const p3 = document.createElement("p");
+      p3.innerHTML =
+        "Stor menu: <span>" + post.acf.pris_for_stor_menu + "</span>";
+      p3.classList.add("madInformation");
+      detailsDiv.appendChild(p3);
+    }
+
+    //Tilføjer titlen og priser til info diven
+    infoDiv.appendChild(titleDiv);
+    infoDiv.appendChild(detailsDiv);
+
+    //Tilføjer billeder og info diven til article
+    article.appendChild(img);
+    article.appendChild(infoDiv);
 
     foodCards.appendChild(article);
-
   });
 };
 
