@@ -1,0 +1,183 @@
+
+/* For op til 1000px */
+@media screen and (max-width: 1000px) {
+    /* Oversigtskort cards */
+    .oversigtskortCards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .oversigtskortCards div {
+        height: 15vh;
+    }
+
+    /* Praktisk information side */
+    .findVejWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .findVejWrapper article p {
+        margin: 2rem 8rem 2em;
+    }
+    .praktiskeOplysningerCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Om Farm Fun side */
+    .omFarmFunHistory {
+        margin: 1rem;
+    }
+    .omFarmFunIntrowrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        height: 100%;
+    }
+    .omFarmFunIntrowrapper div h2 {
+        font-size: 45px;
+        margin-top: 2rem;
+    }
+    .omFarmFunHistory p,
+    .omFarmFunSummary p {
+        padding: 1.5rem;
+    }
+    .omFarmFunHistory h4,
+    .omFarmFunSummary h4 {
+        font-size: $subheadingText;
+        margin-left: 1.5rem;
+    }
+    .omFarmFunHistory img {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .localNav {
+        margin: 0;
+
+    }
+    .localNav a {
+        margin: 1rem;
+    }
+
+    /* Grill side */
+    .grillType {
+        width: 50%;
+        padding-right: 2rem;
+    }
+    .grillType p {
+        font-size: 13px;
+    }
+    .grillType span {
+        font-size: 18px;
+    }
+    .grillSectionLayout h3 {
+        font-size: 25px;
+    }
+    #grillLeje {
+        font-size: 18px;
+    }
+
+    /* Sponsor side */
+    .sponsoratSectionLayout p {
+        padding: 0;
+    }
+}
+
+/* For op til 800px */
+@media screen and (max-width: 800px) {
+    /* Oversigtskort cards */
+    .oversigtskortCards {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 13px;
+    }
+
+    /* Praktisk information side */
+    .praktiskeOplysningerCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Om Farm Fun side */
+    .omFarmFunHistory article {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
+    .omFarmFunSummary {
+        margin: 0;
+    }
+
+    .localNav a {
+        margin: 1rem;
+    }
+
+    /* Grill side */
+    .grillSectionLayout {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .imageContainerGrill {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        order: -1;
+    }
+    #grillImg {
+        margin-bottom: 2rem;
+    }
+    .grillTyper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .grillType {
+        width: 100%;
+        padding-right: 4rem;
+    }
+
+    /* Sponsor side */
+    .sponsoratSectionLayout {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .imageContainerSponsor {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* For op til 500px */
+@media screen and (max-width: 500px) {
+    /* Oversigtskort cards */
+    .oversigtskortCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Praktisk information side */
+    .findVejWrapper article p {
+        margin: 2rem 4rem 2em;
+    }
+
+    .localNav a {
+        font-size: 12px;
+        margin: .8rem;
+    }
+    .omFarmFunIntrowrapper div h2 {
+        font-size: 25px;
+        margin-top: 2rem;
+    }
+    .omFarmFunIntrowrapper div h3 {
+        font-size: 23px;
+    }
+
+    /* Grill side */
+    .grillSectionLayout h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .grillSectionLayout p {
+        margin-top: 0;
+    }
+    .grillLeje {
+        font-size: 15px;
+    }
+
+}

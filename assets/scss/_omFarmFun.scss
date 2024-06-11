@@ -6,22 +6,22 @@
     justify-content: center;
     background-color: white;
     margin-right: 20vh;
-    height: 100vh;
+    height: 100%;
     border-radius: 10px;
 }
   
 .localNav a {
     color: $primaryGreen;
     text-decoration: none;
-    margin: 1.5rem;
+    margin: 1rem;
+    height: fit-content;
 }
   
 .omFarmFunIntrowrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 100vh;
-    margin: 5rem;
+    height: 100%;
+    margin: 3rem;
 }
   
 .omFarmFunIntrowrapper div {
@@ -51,6 +51,9 @@
     font-size: 25px;
 }
   
+.omFarmFunHistory {
+    margin: 3rem;
+}
 .omFarmFunHistory article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -60,13 +63,13 @@
 .omFarmFunHistory h4,
 .omFarmFunSummary h4 {
     font-size: $subheadingText;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
   
 .omFarmFunHistory p,
 .omFarmFunSummary p {
     font-size: $breadText;
-    padding: 2rem;
+    padding: 1rem;
 }
   
 .omFarmFunHistory li {
@@ -83,3 +86,4 @@
     margin-left: 20vw;
     margin-right: 20vw;
   }
+

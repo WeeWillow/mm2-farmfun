@@ -1,5 +1,6 @@
 .sponsoratSectionLayout {
     display: flex;
+    margin: 3rem;
 }
 
 .sponsoratSectionLayout p {
@@ -18,3 +19,16 @@
 #boldTextSponsor {
     font-weight: bold;
 }
+
+#SponsorIMG {
+    width: 50vh;
+    height: 50vh;
+}
+
+.imageContainerSponsor {
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+    
+}
+

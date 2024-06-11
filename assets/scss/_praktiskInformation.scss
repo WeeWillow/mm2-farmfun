@@ -1,12 +1,15 @@
 
+.findVejWrapper, .praktiskeOplysningerCards {
+    margin: 3rem;
+}
 
 .findVejWrapper {
-    margin: 2rem;
+
     display: flex;
 }
 .findVejWrapper article, .findVejWrapper iframe {
-    margin: 1rem;
     background-color: $white ;
+    margin: 10px;
     border-radius: 30px;
     width: 100%;
 
@@ -14,7 +17,8 @@
 
 .findVejWrapper article h2 {
     text-align: center;
-    margin: 2rem;
+    margin-top: 2rem ;
+
 }
 
 .findVejWrapper article h3 {
@@ -27,13 +31,12 @@
 }
 
 .praktiskeOplysningerCards {
-    margin: 2rem;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 
 }
-
 
 .praktiskeOplysningerCards article {
     background-color: $white;
@@ -43,16 +46,18 @@
 
 
 }
+
 .praktiskeOplysningerCards article li {
     padding: .3rem;
 }
+
 .praktiskeOplysningerCards article span{
     font-weight: bold;
 }
 
 .praktiskeOplysningerCards article a {
     color: $accent;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 
