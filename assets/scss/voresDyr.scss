@@ -11,7 +11,7 @@
 
 .animalCards h2 {
   margin-top: 0.5rem;
-  color: #1a4a3f;
+  color: $greenBlack;
   font-size: 1.2rem;
   text-align: left;
 }
@@ -47,9 +47,9 @@
 }
 
 .sorteringsBtn {
-  background-color: #ffb780;
+  background-color: $accent;
   border: none;
-  color: #1a4a3f;
+  color: $greenBlack;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -61,7 +61,7 @@
 }
 
 .sorteringsBtn:hover {
-  background-color: #ffa726;
+  background-color: $accentHover;
 }
 
 //Se flere knap
@@ -71,15 +71,15 @@
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: #1a4a3f;
-  background-color: #ffb780;
+  color: $greenBlack;
+  background-color: $accent;
   border-radius: 20px;
   cursor: pointer;
   border: none;
 }
 
 #seFlereBtn:hover {
-  background-color: #ffa726;
+  background-color: $accentHover;
 }
 
 //Kort sektionen nederst
