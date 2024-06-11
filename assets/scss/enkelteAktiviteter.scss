@@ -1,0 +1,47 @@
+.activityDetailCard {
+  display: flex;
+  border-radius: 20px;
+  margin: 20px;
+  width: 95%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.activityDetailCard img {
+  border-radius: 20px;
+  width: 60%;
+  height: 400px;
+  object-fit: cover;
+  max-height: 500px;
+  margin-top: 100px;
+}
+
+.activityInfo {
+  width: 40%;
+  margin-right: 100px;
+}
+
+.activityInfo h1 {
+  color: $white;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.activityInfo p {
+  margin-bottom: 20px;
+  color: $white;
+}
+
+#seAlleBtn {
+  background-color: $accent;
+  color: $greenBlack;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#seAlleBtn:hover {
+  background-color: $accentHover;
+}
