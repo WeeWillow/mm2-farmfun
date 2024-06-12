@@ -1,5 +1,17 @@
 const navElement = document.querySelector('nav');
-const footerElement = document.querySelector('footer')
+const footerElement = document.querySelector('footer');
+const contactButton = document.getElementById('stickyContactBtn');
+const contactForm = document.getElementById('stickyContactForm');
+const closeFormBtn = document.getElementById('closeForm');
+
+// sticky contact button
+contactButton.addEventListener('click', () => {
+  contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
+})
+
+closeFormBtn.addEventListener('click', () => {
+  contactForm.style.display = 'none';
+});
 
 // create nav in body
 // set content for nav
