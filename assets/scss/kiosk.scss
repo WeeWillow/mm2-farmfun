@@ -3,18 +3,14 @@
   display: flex;
 }
 .introTekst p {
-  width: 33%;
   color: $greenBlack;
-  margin-left: 100px;
-  width: 50ch;
+  width: 70ch;
   font-size: 1.2rem;
 }
 
 .introTekst img {
-  width: 50%;
-  height: 700px;
-  margin-right: 100px;
-  margin-left: 200px;
+  width: 66%;
+  height: 450px;
   margin-bottom: 200px;
 }
 //Foodcards afsnit
@@ -22,7 +18,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding: 20px;
 }
 
 .foodCards article {
@@ -73,9 +68,8 @@
 //Kiosk sektionen nederst
 .kioskTekst {
   width: 100%;
-  padding: 20px;
-  border-radius: 8px;
   color: $greenBlack;
+  margin-top: 100px;
 }
 .kioskTekst h2 {
   font-size: 1.8em;
