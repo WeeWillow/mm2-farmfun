@@ -1,6 +1,4 @@
-#oversigtskortOgBeskrivelse, .oversigtskortOverskift, .oversigtskortCards {
-    margin: 3rem;
-}
+
 
 #oversigtskortOgBeskrivelse p {
     margin-top: 2rem;
@@ -23,7 +21,6 @@
 .oversigtskortCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 2rem;
 
 }
 
@@ -31,11 +28,15 @@
     background-color: $white;
     margin: 1rem;
     border-radius: 10px;
-    height: 15vh;
+    height: 90%;
     display: flex;
     align-items: center;
     padding: 1rem;
 
+}
+
+.oversigtskortCards div p {
+    font-size: 13px;
 }
 
 
@@ -43,6 +44,6 @@
     color: $secondaryGreen;
     font-size: $subheadingText;
     padding: .5rem;
-    margin-right: 1.5em ;
+    margin-right: .5em ;
 
 }

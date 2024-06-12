@@ -1,14 +1,11 @@
 
-.findVejWrapper, .praktiskeOplysningerCards {
-    margin: 3rem;
-}
 
 .findVejWrapper {
 
     display: flex;
 }
 .findVejWrapper article, .findVejWrapper iframe {
-    background-color: $white ;
+    background-color: $white;
     margin: 10px;
     border-radius: 30px;
     width: 100%;

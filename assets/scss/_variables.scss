@@ -12,7 +12,14 @@ $greenGradient: linear-gradient(to top,#B9C879, #679578);
 $generalBackground: #CBD5CF;
 // sizings
 
-// text
-$breadText: 1rem;
-$headingText: 4rem;
+
+// Text desktop
+$breadText: 1.1rem;
+$headingText: 3rem;
 $subheadingText: 2rem;
+
+
+// Text mobile
+$breadTextMobile: 1rem;
+$headingTextMobile: 2rem;
+$subheadingTextMobile: 1rem;

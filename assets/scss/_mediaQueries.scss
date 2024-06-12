@@ -1,10 +1,37 @@
 
 /* For op til 1000px */
 @media screen and (max-width: 1000px) {
-    /* Oversigtskort cards */
+
+    // Generelle font sizes
+    // Heading text
+    .mainContent h1 {
+        font-size: 40px;
+    }
+
+    .mainContent h2 {
+        font-size: 35px;
+    }
+
+    .mainContent h3 {
+        font-size: 35px;
+    }
+
+    .mainContent h4 {
+        font-size: 35px;
+    }
+
+
+    /* Grid 3 columns - 1000px */
     .oversigtskortCards {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    // Grid 2 columns - 1000px
+    .praktiskeOplysningerCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // Oversigtskort
     .oversigtskortCards div {
         height: 15vh;
     }
@@ -17,9 +44,7 @@
     .findVejWrapper article p {
         margin: 2rem 8rem 2em;
     }
-    .praktiskeOplysningerCards {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 
     /* Om Farm Fun side */
     .omFarmFunHistory {
@@ -32,7 +57,6 @@
         height: 100%;
     }
     .omFarmFunIntrowrapper div h2 {
-        font-size: 45px;
         margin-top: 2rem;
     }
     .omFarmFunHistory p,
@@ -41,7 +65,6 @@
     }
     .omFarmFunHistory h4,
     .omFarmFunSummary h4 {
-        font-size: $subheadingText;
         margin-left: 1.5rem;
     }
     .omFarmFunHistory img {
@@ -57,22 +80,21 @@
         margin: 1rem;
     }
 
+    .mainContent .omFarmFunHistory p,
+    .omFarmFunSummary p, .omFarmFunHistory h4,
+    .omFarmFunSummary h4 {
+        padding: 0.8rem;
+
+    }
+    .mainContent .omFarmFunHistory h4,
+    .omFarmFunSummary h4 {
+        margin: 0;
+    }
+
     /* Grill side */
     .grillType {
         width: 50%;
         padding-right: 2rem;
-    }
-    .grillType p {
-        font-size: 13px;
-    }
-    .grillType span {
-        font-size: 18px;
-    }
-    .grillSectionLayout h3 {
-        font-size: 25px;
-    }
-    #grillLeje {
-        font-size: 18px;
     }
 
     /* Sponsor side */
@@ -83,20 +105,42 @@
 
 /* For op til 800px */
 @media screen and (max-width: 800px) {
-    /* Oversigtskort cards */
+
+        // Generelle font sizes
+    // Heading text
+    .mainContent h1 {
+        font-size: 30px;
+    }
+
+    .mainContent h2 {
+        font-size: 25px;
+    }
+
+    .mainContent h3 {
+        font-size: 25px;
+    }
+
+ 
+    // Bread text mobile
+
+    .mainContent p, .mainContent li {
+        font-size: 15px;
+    }
+
+    // Grids
+    /*Grid 2 columns - 800px */
     .oversigtskortCards {
         grid-template-columns: repeat(2, 1fr);
         font-size: 13px;
     }
 
-    /* Praktisk information side */
-    .praktiskeOplysningerCards {
+    /* Grid 1 column - 800px */
+    .praktiskeOplysningerCards, .omFarmFunHistory article {
         grid-template-columns: repeat(1, 1fr);
     }
 
     /* Om Farm Fun side */
     .omFarmFunHistory article {
-        grid-template-columns: repeat(1, 1fr);
         margin: 0;
     }
 
@@ -146,10 +190,57 @@
 
 /* For op til 500px */
 @media screen and (max-width: 500px) {
-    /* Oversigtskort cards */
+    // Generelle font sizes
+    // Heading text
+    .mainContent h1 {
+        font-size: $headingTextMobile;
+    }
+
+    .mainContent h2 {
+        font-size: $headingTextMobile;
+    }
+
+    .mainContent h3 {
+        font-size: $subheadingTextMobile;
+    }
+
+    .mainContent h4 {
+        font-size: $subheadingTextMobile;
+    }
+
+
+    .mainContent a h5 {
+        font-size: 13px;
+    }
+
+
+    // Bread text mobile
+    .mainContent p, .mainContent li {
+        font-size: $breadTextMobile;
+    }
+
+    .mainContent .omFarmFunIntrowrapper h2 {
+        font-size: $headingTextMobile;
+    }
+
+    .mainContent .omFarmFunIntrowrapper div p {
+        font-size: $breadTextMobile;
+    }
+
+
+    // generel width
+    .mainContent {
+        width: 90vw;
+    }
+
+
+
+
+    /* Mobile grid: 1 column*/
     .oversigtskortCards {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
     /* Praktisk information side */
     .findVejWrapper article p {
@@ -157,27 +248,19 @@
     }
 
     .localNav a {
-        font-size: 12px;
         margin: .8rem;
     }
     .omFarmFunIntrowrapper div h2 {
-        font-size: 25px;
         margin-top: 2rem;
     }
-    .omFarmFunIntrowrapper div h3 {
-        font-size: 23px;
-    }
+
 
     /* Grill side */
     .grillSectionLayout h3 {
-        font-size: 20px;
         margin-bottom: 0;
     }
     .grillSectionLayout p {
         margin-top: 0;
-    }
-    .grillLeje {
-        font-size: 15px;
     }
 
 }
