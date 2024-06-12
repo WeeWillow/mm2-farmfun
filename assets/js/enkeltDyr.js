@@ -47,7 +47,7 @@ const displayAnimalDetails = (post) => {
       </div>
     `;
 
-  // Tilføj event listener til tilbage knappen
+  // Tilføj event listener til tilbage knappeN
   document.getElementById("tilbageBtn").addEventListener("click", () => {
     window.history.back();
   });
