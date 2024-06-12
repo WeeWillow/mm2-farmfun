@@ -28,8 +28,7 @@ const displayPosts = (posts) => {
     const h2 = document.createElement("h2");
     const link = document.createElement("a");
 
-    link.href = post.link;
-
+    link.href = link.href = `enkelteAktiviteter.html?id=${post.id}`;
     img.src = post.acf.billede.url;
     img.alt = post.title.rendered;
 
