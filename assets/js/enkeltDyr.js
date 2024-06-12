@@ -1,8 +1,9 @@
 const urlBase = "https://api.jacobfynbo.com/wp-json/wp/v2/";
 
 const getAnimalIdFromUrl = () => {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("id");
+  //URLSearchParams gør vi kan arbejde med url som string , ved at få fat i id (det er der kommer efter ? i url)
+  const newUrl = new URLSearchParams(window.location.search);
+  return newUrl.get("id");
 };
 
 const fetchAnimalDetails = (animalId) => {
@@ -40,14 +41,14 @@ const displayAnimalDetails = (post) => {
               <p>${post.acf.fode_foretrukket_af_dyr}</p>
             </div>
           </div>
-          <button id="backButton">Tilbage</button>
+          <button id="tilbageBtn">Tilbage</button>
         </div>
         <img src="${post.acf.billede_af_dyr.url}" alt="${post.title.rendered}">
       </div>
     `;
 
   // Tilføj event listener til tilbage knappen
-  document.getElementById("backButton").addEventListener("click", () => {
+  document.getElementById("tilbageBtn").addEventListener("click", () => {
     window.history.back();
   });
 };
