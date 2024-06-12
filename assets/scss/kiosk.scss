@@ -1,3 +1,25 @@
+//Intro tekst afsnit
+.introTekst {
+  display: flex;
+}
+.introTekst p {
+  width: 33%;
+  padding-right: 20px;
+  color: $greenBlack;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-top: 100px;
+  width: 70ch;
+}
+
+.introTekst img {
+  width: 50%;
+  height: 500px;
+  margin-right: 100px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+}
+//Foodcards afsnit
 .foodCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
