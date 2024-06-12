@@ -29,9 +29,10 @@ const fetchPosts = () => {
 
 const displayPosts = () => {
   const animalCards = document.querySelector(".animalCards");
-  //Henter post fra currentindex, til currenIndex + postprpage (12)
+  //Henter post fra currentindex, til currenIndex(0) + postprpage (12). Slice bruges til at få denne specefikke del af arrayet
   const postsToShow = allPosts.slice(currentIndex, currentIndex + postsPerPage);
   postsToShow.forEach((post) => {
+    //Skaber nye html elementer for hver post
     const article = document.createElement("article");
     const img = document.createElement("img");
     const h2 = document.createElement("h2");
@@ -40,6 +41,7 @@ const displayPosts = () => {
     img.src = post.acf.billede_af_dyr.url;
     img.alt = post.title.rendered;
     h2.innerHTML = post.title.rendered;
+
     //Linker til enkelt dyr side med post id i url
     link.href = `enkeltDyr.html?id=${post.id}`;
 
@@ -48,7 +50,7 @@ const displayPosts = () => {
     article.appendChild(link);
     animalCards.appendChild(article);
   });
-  //Fjerner knappen hvis alle bliver vist
+  //Fjerner knappen hvis alle bliver vist, altså at allPost length er 0 eller under, så får btn display none
   currentIndex += postsPerPage;
   if (currentIndex >= allPosts.length) {
     document.getElementById("seFlereBtn").style.display = "none";
