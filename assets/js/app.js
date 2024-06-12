@@ -1,17 +1,57 @@
 const navElement = document.querySelector('nav');
 const footerElement = document.querySelector('footer');
-const contactButton = document.getElementById('stickyContactBtn');
-const contactForm = document.getElementById('stickyContactForm');
-const closeFormBtn = document.getElementById('closeForm');
 
 // sticky contact button
-contactButton.addEventListener('click', () => {
-  contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
-})
+function renderStickyContact() {
+  const stickyContactContainer = document.querySelector('#stickyContactContainer');
 
-closeFormBtn.addEventListener('click', () => {
-  contactForm.style.display = 'none';
-});
+  const contactBtnContent = `
+  <div id="stickyContactBtn">
+    <button>kontakt os <i class="fa-solid fa-envelope"></i></button>
+    <div id="stickyContactForm">
+      <p>Farm Fun Kontakt</p>
+      <button id="closeForm">x</button>
+      <form>
+        <p>
+          Send en besked i formularen nedenunder, og vi vender tilbage så hurtigt som muligt!
+        </p>
+
+        <input type="text" id="navn" name="navn" placeholder="Navn">
+
+        <input type="tel" id="tlf" name="tlf" placeholder="Telefonnummer">
+
+        <input type="email" id="email" name="email" placeholder="E-mail">
+
+        <input type="text" name="emne" placeholder="Emne">
+
+        <textarea name="besked" placeholder="Din besked"></textarea>
+
+        <button type="submit">Send besked</button>
+      </form>
+    </div>
+  </div>
+  `;
+
+  stickyContactContainer.innerHTML = contactBtnContent;
+
+  const contactButton = document.getElementById('stickyContactBtn');
+  const contactForm = document.getElementById('stickyContactForm');
+  const closeFormBtn = document.getElementById('closeForm');
+
+  contactButton.addEventListener('click', () => {
+    if (!event.target.closest('#stickyContactForm')) {
+      contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
+    }
+  });
+  
+  closeFormBtn.addEventListener('click', () => {
+    contactForm.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', renderStickyContact);
+
+
 
 // create nav in body
 // set content for nav
