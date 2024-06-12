@@ -1,0 +1,22 @@
+main {
+  &#kontaktSide{
+    min-height: 47vh;
+  }
+}
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+h1 {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.formKontakt {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}

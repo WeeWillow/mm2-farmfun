@@ -1,9 +1,5 @@
-header {
-  height: 100vh;
-}
-
 .headerContent {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-weight: 500;
   color: $white;
   margin: auto;
@@ -14,7 +10,7 @@ header {
 
   img {
     height: 600px;
-  };
+  }
 }
 .leftContent {
   display: flex;
@@ -24,13 +20,13 @@ header {
   .headerBtns {
     display: flex;
     gap: 1rem;
-    font-family: 'overpass', sans-serif;
-    
+    font-family: "overpass", sans-serif;
+
     span {
       text-transform: uppercase;
       color: $greenBlack;
     }
-  
+
     div {
       border-radius: 18px;
       width: 150px;
@@ -40,24 +36,23 @@ header {
       align-items: center;
       font-weight: 600;
     }
-  
+
     .aabningstiderBtn {
       background: $secondaryGreen;
     }
-  
+
     .koebBilletBtn {
       background: $accent;
     }
   }
 
   .openToday {
-
     h3 {
-      font-family: 'overpass', sans-serif;
+      font-family: "overpass", sans-serif;
     }
 
     span {
-      font-family: 'fredoka', sans-serif;
+      font-family: "fredoka", sans-serif;
       font-size: 2rem;
       font-weight: 500;
     }

@@ -3,7 +3,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   font-family: "overpass", sans-serif;
   background: $primaryGreen70;
   backdrop-filter: blur(10px) saturate(160%) contrast(45%) brightness(140%);
@@ -22,12 +22,12 @@ nav {
     list-style: none;
     color: $white;
     display: flex;
-    
+
     li {
-      margin: .5rem;
-      
+      margin: 0.5rem;
+
       a {
-        padding: .5rem;
+        padding: 0.5rem;
         color: $white;
         text-decoration: none;
 
@@ -43,7 +43,7 @@ nav {
       }
 
       span {
-        padding: .5rem;
+        padding: 0.5rem;
         cursor: pointer;
       }
     }
@@ -51,7 +51,6 @@ nav {
 }
 
 .dropdown {
-
   ul {
     display: none;
     opacity: 0;
@@ -85,17 +84,15 @@ nav {
   }
 
   .dropdownList {
-  
     li {
       margin: 1rem 0;
     }
-  
+
     a {
-      padding: .5rem;
+      padding: 0.5rem;
       background: $greenBlack;
       border-radius: 20px;
       display: block;
-      
 
       &:hover {
         color: $greenBlack;

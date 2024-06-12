@@ -1,9 +1,7 @@
 @use "./variables" as *;
 
 // typography
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
 // general styling
 * {
@@ -13,28 +11,33 @@
 }
 
 body {
-  background: $primaryGreen;
-  margin-top: 11vh;
-}
-
-header {
-  background: $greenGradient;
-}
-
-main {
-  padding: 6vh 0;
   background: $generalBackground;
 }
 
+header {
+  margin: 10vh 0 4vh 0;
+  background: $greenGradient;
+
+  &.headerFullsize {
+    height: 100vh;
+  }
+
+  &.headerWave {
+    height: 25vh;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.28);
+  }
+}
+
+main {
+  background: $generalBackground;
+  min-height: 76vh;
+}
+
 .mainContent {
-  margin: 0 auto;
+  margin: 0 auto 10vh auto;
   width: 80vw;
 }
 
-
-
-
-
-
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
-@import "globalNav", "footer", "indexForside", "grill", "omFarmFun", "praktiskInformation", "oversigtsKort", "sponsorat";
+@import "globalNav", "footer", "indexForside", "grill", "omFarmFun", "praktiskInformation", "oversigtsKort", "sponsorat",
+  "kontakt";

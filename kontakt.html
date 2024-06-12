@@ -21,9 +21,38 @@
 
 <body>
   <nav></nav>
-  <header>
+  <header class="headerWave">
+    <h1>Kontakt Farm Fun</h1>
   </header>
-  <main>
+  <main id="kontaktSide">
+    <div class="mainContent">
+      <div class="formKontakt">
+        <p>Udfyld kontaktformularen nedenfor, s&aring; kontakter vi dig!</p>
+        <form>
+          <label for="navn">Navn</label>
+          <input type="text" id="navn" name="navn" placeholder="Dit navn">
+
+          <label for="tlf">Telefonnummer</label>
+          <input type="number" id="tlf" name="tlf" placeholder="Dit telefonnummer">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Din e-mail">
+
+          <label for="emne">Emne</label>
+          <input type="text" name="emne" placeholder="Dit emne">
+
+          <label for="besked">Besked</label>
+          <textarea name="besked" placeholder="Din besked"></textarea>
+
+          <button type="submit">Send besked</button>
+        </form>
+      </div>
+      <div class="kontaktInfo">
+        <p>Du kan ogs&aring; kontakte os direkte via telefon eller e-mail.</p>
+        <div class="tlfNr"><i class="fa-solid fa-phone"></i> 98 48 81 14</div>
+        <div class="email"><i class="fa-solid fa-envelope"></i> farmfun@farmfun.dk</div>
+      </div>
+    </div>
   </main>
   <footer></footer>
 </body>
