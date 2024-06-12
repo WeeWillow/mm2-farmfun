@@ -27,8 +27,9 @@ const displayActivityDetails = (post) => {
     <div class="activityDetailCard">
       <div class="activityInfo">
         <h1>${post.title.rendered}</h1>
-        <p>Anbefalet Alder: ${post.acf.aldersgruppe.name}</p>
-        <p>Beskrivelse: ${post.acf.forlystelse_beskrivelse}</p>
+        <p id="anbefaletAlder">Anbefalet Alder:</p>
+        <p>${post.acf.aldersgruppe.name}</p>
+        <p id="beskrivelse">Beskrivelse: ${post.acf.forlystelse_beskrivelse}</p>
         <button id="seAlleBtn">Se flere forlystelser</button>
       </div>
       <img src="${post.acf.billede.url}" alt="${post.title.rendered}">
