@@ -1,9 +1,8 @@
-
-/* For op til 1000px */
+/* Op til 1000px */
 @media screen and (max-width: 1000px) {
 
-    // Generelle font sizes
-    // Heading text
+    /* Generelle font sizes */
+    /* Heading text */
     .mainContent h1 {
         font-size: 40px;
     }
@@ -20,18 +19,17 @@
         font-size: 35px;
     }
 
-
     /* Grid 3 columns - 1000px */
     .oversigtskortCards {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    // Grid 2 columns - 1000px
+    /* Grid 2 columns - 1000px */
     .praktiskeOplysningerCards {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    // Oversigtskort
+    /* Oversigtskort */
     .oversigtskortCards div {
         height: 15vh;
     }
@@ -44,7 +42,6 @@
     .findVejWrapper article p {
         margin: 2rem 8rem 2em;
     }
-
 
     /* Om Farm Fun side */
     .omFarmFunHistory {
@@ -74,7 +71,6 @@
 
     .localNav {
         margin: 0;
-
     }
     .localNav a {
         margin: 1rem;
@@ -84,7 +80,6 @@
     .omFarmFunSummary p, .omFarmFunHistory h4,
     .omFarmFunSummary h4 {
         padding: 0.8rem;
-
     }
     .mainContent .omFarmFunHistory h4,
     .omFarmFunSummary h4 {
@@ -106,8 +101,8 @@
 /* For op til 800px */
 @media screen and (max-width: 800px) {
 
-        // Generelle font sizes
-    // Heading text
+    /* Generelle font sizes */
+    /* Heading text */
     .mainContent h1 {
         font-size: 30px;
     }
@@ -120,15 +115,13 @@
         font-size: 25px;
     }
 
- 
-    // Bread text mobile
-
+    /* Bread text mobile */
     .mainContent p, .mainContent li {
         font-size: 15px;
     }
 
-    // Grids
-    /*Grid 2 columns - 800px */
+    /* Grids */
+    /* Grid 2 columns - 800px */
     .oversigtskortCards {
         grid-template-columns: repeat(2, 1fr);
         font-size: 13px;
@@ -190,8 +183,8 @@
 
 /* For op til 500px */
 @media screen and (max-width: 500px) {
-    // Generelle font sizes
-    // Heading text
+    /* Generelle font sizes */
+    /* Heading text */
     .mainContent h1 {
         font-size: $headingTextMobile;
     }
@@ -208,13 +201,11 @@
         font-size: $subheadingTextMobile;
     }
 
-
     .mainContent a h5 {
         font-size: 13px;
     }
 
-
-    // Bread text mobile
+    /* Bread text mobile */
     .mainContent p, .mainContent li {
         font-size: $breadTextMobile;
     }
@@ -227,20 +218,15 @@
         font-size: $breadTextMobile;
     }
 
-
-    // generel width
+    /* generel width */
     .mainContent {
         width: 90vw;
     }
 
-
-
-
-    /* Mobile grid: 1 column*/
+    /* Mobile grid: 1 column */
     .oversigtskortCards {
         grid-template-columns: repeat(1, 1fr);
     }
-
 
     /* Praktisk information side */
     .findVejWrapper article p {
@@ -254,7 +240,6 @@
         margin-top: 2rem;
     }
 
-
     /* Grill side */
     .grillSectionLayout h3 {
         margin-bottom: 0;
@@ -262,5 +247,4 @@
     .grillSectionLayout p {
         margin-top: 0;
     }
-
 }
