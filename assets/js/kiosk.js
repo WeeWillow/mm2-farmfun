@@ -17,14 +17,14 @@ const fetchPosts = () => {
     .then((data) => {
       displayPosts(data);
     })
-    .catch((err) => console.error("Error fetching posts:", err));
+    .catch((err) => console.error("Fejl ved hentningen af posts:", err));
 };
 
 const displayPosts = (posts) => {
   const foodCards = document.querySelector(".foodCards");
   foodCards.innerHTML = "";
   posts.forEach((post) => {
-    //Laver først articlen og elementerne i artiklen
+    //Laver html elementer for hvert post
     const article = document.createElement("article");
     const img = document.createElement("img");
     const h2 = document.createElement("h2");
@@ -35,6 +35,7 @@ const displayPosts = (posts) => {
     //Tilføjer klassen foodTitle bare til h2, for at kunne target den i scss
     h2.innerHTML = post.title.rendered;
     const titleDiv = document.createElement("div");
+    //Tilføjer  klasse til titlen
     titleDiv.classList.add("foodTitle");
     titleDiv.appendChild(h2);
 
