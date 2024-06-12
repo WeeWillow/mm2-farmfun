@@ -22,6 +22,7 @@ const fetchPosts = () => {
 const displayPosts = (posts) => {
   const activityCards = document.querySelector(".activityCards");
   activityCards.innerHTML = "";
+  //Skaber html element for hver post
   posts.forEach((post) => {
     const article = document.createElement("article");
     const img = document.createElement("img");
@@ -30,6 +31,7 @@ const displayPosts = (posts) => {
 
     //Linker til enkelt aktiviteter siden med post.id i url'en
     link.href = link.href = `enkelteAktiviteter.html?id=${post.id}`;
+    
     img.src = post.acf.billede.url;
     img.alt = post.title.rendered;
 
