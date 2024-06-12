@@ -1,9 +1,9 @@
 #two-one-grid {
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    grid-template-columns: repeat(1fr);
     gap: 40px;
     padding: 40px;
-    width: 100vw;
+    margin: auto;
    
 }
 #one-two-grid{
@@ -11,6 +11,6 @@
     grid-template-columns: 5fr 7fr;
     gap: 40px;
     padding: 40px;
-    width: 100vw;
+    
     
 }
