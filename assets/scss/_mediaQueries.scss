@@ -1,27 +1,7 @@
-/* Op til 1000px */
+
 @media screen and (max-width: 1000px) {
 
     
-
-
-    /* Generelle font sizes */
-    /* Heading text */
-    .mainContent h1 {
-        font-size: 40px;
-    }
-
-    .mainContent h2 {
-        font-size: 35px;
-    }
-
-    .mainContent h3 {
-        font-size: 35px;
-    }
-
-    .mainContent h4 {
-        font-size: 35px;
-    }
-
     /* Grid 3 columns - 1000px */
     .oversigtskortCards {
         grid-template-columns: repeat(3, 1fr);
@@ -80,7 +60,7 @@
     }
 }
 
-/* For op til 800px */
+
 @media screen and (max-width: 800px) {
 
     /* Generelle font sizes */
@@ -136,6 +116,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        order: -1;
     }
     #grillImg {
         margin-bottom: 2rem;
@@ -158,10 +139,11 @@
     .imageContainerSponsor {
         display: flex;
         justify-content: center;
+        order: -1;
     }
 }
 
-/* For op til 500px */
+
 @media screen and (max-width: 500px) {
     /* Generelle font sizes */
     /* Heading text */
@@ -190,6 +172,7 @@
         font-size: $breadTextMobile;
     }
 
+    /*Om farm fun FontSize*/
     .mainContent .omFarmFunIntrowrapper h2 {
         font-size: $headingTextMobile;
     }
