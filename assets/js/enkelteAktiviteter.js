@@ -3,10 +3,12 @@ const urlBase = "https://api.jacobfynbo.com/wp-json/wp/v2/";
 const getActivityIdFromUrl = () => {
   //Lader os arbejde med url stringen, så vi kan sætte id'et der bliver klikket på ind i den.
   const params = new URLSearchParams(window.location.search);
+  //Returnere id fra url'en
   return params.get("id");
 };
 
 const fetchActivityDetails = (activityId) => {
+  // Henter detaljer for en specifik aktivitet fra API'et
   fetch(`${urlBase}posts/${activityId}`)
     .then((res) => res.json())
     .then((post) => {
@@ -19,11 +21,6 @@ const fetchActivityDetails = (activityId) => {
 
 const displayActivityDetails = (post) => {
   const activityDetailSection = document.querySelector(".enkeltAktivitet");
-  if (!activityDetailSection) {
-    console.error("Kunne ikke finde 'enkeltAktivitet'");
-    return;
-  }
-
   activityDetailSection.innerHTML = `
     <div class="activityDetailCard">
       <div class="activityInfo">
@@ -39,13 +36,10 @@ const displayActivityDetails = (post) => {
 
   // Tilføj event listener til se alle knappen
   document.getElementById("seAlleBtn").addEventListener("click", () => {
+    //Windows.history.back går tilbage til sidste url man har besøgt
     window.history.back();
   });
 };
 // Hent aktivitets-ID'et fra URL'en og hent derefter aktivitetsdetaljer
 const activityId = getActivityIdFromUrl();
-if (activityId) {
-  fetchActivityDetails(activityId);
-} else {
-  console.error("Ingen aktivitets-ID fundet i URL'en");
-}
+fetchActivityDetails(activityId);
