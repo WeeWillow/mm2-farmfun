@@ -27,7 +27,7 @@
 .oversigtskortCards div {
     background-color: $white;
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: $BorderRadius;
     height: 80%;
     display: flex;
     align-items: center;

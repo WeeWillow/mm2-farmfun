@@ -8,7 +8,7 @@
 }
 .findVejWrapper article, .findVejWrapper iframe {
     background-color: $white;
-    border-radius: 30px;
+    border-radius: $BorderRadius;
     width: 100%;
 
 }
@@ -38,7 +38,7 @@
 
 .praktiskeOplysningerCards article {
     background-color: $white;
-    border-radius: 30px;
+    border-radius: $BorderRadius;
     width: 100%;
     height: 100%;
 
