@@ -1,6 +1,7 @@
 const urlBase = "https://api.jacobfynbo.com/wp-json/wp/v2/";
 
 const getActivityIdFromUrl = () => {
+  //Lader os arbejde med url stringen, så vi kan sætte id'et der bliver klikket på ind i den.
   const params = new URLSearchParams(window.location.search);
   return params.get("id");
 };
