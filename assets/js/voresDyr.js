@@ -1,8 +1,12 @@
 const urlBase = "https://api.jacobfynbo.com/wp-json/wp/v2/";
 const categorySlug = "dyresiden";
+// Henter 100 post
 const perPage = 100;
+//Et tomt array til alle post
 let allPosts = [];
+//Indexere listen af dyr, startede fra 0, 1, 2 osv.
 let currentIndex = 0;
+//Henter 12 post svarende til 3 rækker
 const postsPerPage = 12;
 
 const fetchPosts = () => {
@@ -25,6 +29,7 @@ const fetchPosts = () => {
 
 const displayPosts = () => {
   const animalCards = document.querySelector(".animalCards");
+  //Henter post fra currentindex, til currenIndex + postprpage (12)
   const postsToShow = allPosts.slice(currentIndex, currentIndex + postsPerPage);
   postsToShow.forEach((post) => {
     const article = document.createElement("article");
@@ -35,6 +40,7 @@ const displayPosts = () => {
     img.src = post.acf.billede_af_dyr.url;
     img.alt = post.title.rendered;
     h2.innerHTML = post.title.rendered;
+    //Linker til enkelt dyr side med post id i url
     link.href = `enkeltDyr.html?id=${post.id}`;
 
     link.appendChild(img);
