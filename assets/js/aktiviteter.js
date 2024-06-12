@@ -14,7 +14,7 @@ const fetchPosts = () => {
           .then((data) => {
             displayPosts(data);
           })
-          .catch((err) => console.error("Error fetching posts:", err));
+          .catch((err) => console.error("Fejl ved hentning af posts:", err));
       }
     });
 };
@@ -28,6 +28,7 @@ const displayPosts = (posts) => {
     const h2 = document.createElement("h2");
     const link = document.createElement("a");
 
+    //Linker til enkelt aktiviteter siden med post.id i url'en
     link.href = link.href = `enkelteAktiviteter.html?id=${post.id}`;
     img.src = post.acf.billede.url;
     img.alt = post.title.rendered;
@@ -41,7 +42,6 @@ const displayPosts = (posts) => {
 
     activityCards.appendChild(article);
 
-    console.log(post);
   });
 };
 
