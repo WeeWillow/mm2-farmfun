@@ -1,12 +1,7 @@
 main {
-  &#kontaktSide{
+  &#kontaktSide {
     min-height: 47vh;
   }
-}
-.mainContent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
 }
 
 h1 {

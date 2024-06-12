@@ -19,7 +19,7 @@ header {
   background: $greenGradient;
 
   &.headerFullsize {
-    height: 100vh;
+    height: 90vh;
   }
 
   &.headerWave {
@@ -36,6 +36,9 @@ main {
 .mainContent {
   margin: 0 auto 10vh auto;
   width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
