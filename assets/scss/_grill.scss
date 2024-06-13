@@ -1,30 +1,32 @@
 
 
-.GrillsectionLayout h3 {
+.grillSectionLayout h3 {
     font-size: $subheadingText;
     padding: 2rem;
 }
 
 
 #grillLeje {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-
-
-.GrillsectionLayout {
+.grillSectionLayout {
     display: flex;
+    
 }
 
-.GrillsectionLayout p {
+.grillSectionLayout p {
     margin: 2rem;
 }
 
 #grillImg {
+    width: 50vh;
     height: 50vh;
-    margin: 2rem;
+}
 
-
+.imageContainerGrill {
+    width: 80%;
+    height: auto;
 }
 
 .grillTyper {
@@ -40,7 +42,7 @@
     }
     
 .grillType {
-      width: 40%;
+      width: 60%;
       padding:  0 8rem 0 0;
     
 }

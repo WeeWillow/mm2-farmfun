@@ -1,20 +1,22 @@
 
 
 .findVejWrapper {
-    margin: 2rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
     display: flex;
 }
 .findVejWrapper article, .findVejWrapper iframe {
-    margin: 1rem;
-    background-color: $white ;
-    border-radius: 30px;
+    background-color: $white;
+    border-radius: $BorderRadius;
     width: 100%;
 
 }
 
 .findVejWrapper article h2 {
     text-align: center;
-    margin: 2rem;
+    margin-top: 2rem ;
+
 }
 
 .findVejWrapper article h3 {
@@ -27,32 +29,28 @@
 }
 
 .praktiskeOplysningerCards {
-    margin: 2rem;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 
 }
 
-
 .praktiskeOplysningerCards article {
     background-color: $white;
-    border-radius: 30px;
+    border-radius: $BorderRadius;
     width: 100%;
     height: 100%;
 
 
 }
+
 .praktiskeOplysningerCards article li {
     padding: .3rem;
 }
+
 .praktiskeOplysningerCards article span{
     font-weight: bold;
-}
-
-.praktiskeOplysningerCards article a {
-    color: $accent;
-    margin: 2rem;
 }
 
 
