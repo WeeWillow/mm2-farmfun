@@ -79,13 +79,11 @@
   }
 }
 
-
-
 .sections section {
   grid-column: span 2;
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem ;
+  margin-bottom: 2rem;
 
   h2 {
     color: $greenBlack;
@@ -93,7 +91,7 @@
   }
 
   p {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     color: $greenBlack;
   }
 
@@ -121,7 +119,7 @@
         height: 150px;
         object-fit: cover;
         padding: 0;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
       }
     }
   }
@@ -133,15 +131,14 @@
     p {
     }
     .infoFarm {
-      font-family: 'overpass', sans-serif;
+      font-family: "overpass", sans-serif;
       text-align: center;
 
       span {
-        font-family: 'fredoka', sans-serif;
+        font-family: "fredoka", sans-serif;
         font-size: 2.5rem;
         font-weight: bold;
       }
-
     }
   }
 
@@ -167,11 +164,11 @@
 
   &.imgGalleri {
     & img {
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
       object-fit: cover;
       padding: 0;
-      border-radius: 1rem;
+      border-radius: 0.8rem;
     }
   }
 
@@ -193,11 +190,11 @@ a {
   background: $accent;
   color: $greenBlack;
   padding: 10px 20px;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  font-family: 'overpass', sans-serif;
+  font-family: "overpass", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -206,4 +203,49 @@ a {
   &:hover {
     background: $accentHover;
   }
+}
+.slideMedKnapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideGalleri {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.slideGalleri img {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.tilbage,
+.frem {
+  position: absolute;
+  top: 50%;
+  background-color: $accent;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tilbage {
+  left: 0;
+}
+
+.frem {
+  right: 0;
+}
+
+.fa-solid {
+  opacity: 50%;
 }
