@@ -1,471 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- META -->
-        <meta charset="UTF-8" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- META END -->
-        <!-- Font Awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-        <!-- Font Awesome END -->
-        <link rel="stylesheet" href="./assets/css/style.min.css" />
-        <script src="./assets/js/app.js" defer></script>
-        <title>Farm Fun</title>
-    </head>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META END -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome END -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <title>Farm Fun</title>
+  </head>
 
-    <body>
-        <nav></nav>
-        <header class="headerWave">
-            <h1>Undervisningsbesøg</h1>
-        </header>
-        <main>
-            <div id="stickyContactContainer"></div>
-            <div class="mainContent">
-                <p>
-                    Vores undervisningsforløb kombinerer teoretisk undervisning med
-                    hands-on oplevelser, der giver eleverne mulighed for at lugte,
-                    se, føle og interagere med dyrene. En typisk
-                    undervisningssession varer mellem 60-90 minutter og inkluderer
-                    både en teoretisk del og en praktisk del.
-                </p>
-                <h4>Forløbets Struktur</h4>
-                <p>
-                    Formidlerne bruger en blanding af faglig og personlig viden samt
-                    effekter fra dyrene for at give eleverne en dybdegående
-                    forståelse af de emner, der undervises i. En kort pause giver
-                    eleverne mulighed for at reflektere over deres nye viden.
-                    Eleverne får mulighed for at anvende deres teoretiske viden i
-                    praksis ved at interagere med dyrene. Efter undervisningen er
-                    der rig mulighed for eleverne at udforske Farm Fun på egen hånd
-                    og fordybe sig yderligere i det, de har lært.
-                </p>
-                <h4>Priser og Booking</h4>
-                <p>Undervisningsforløb inkl. opfølgning: 500kr</p>
-                <p>Entré per person: 50kr</p>
-                <p>
-                    Minimum 12 elever pr. booking. For hver 12 elever er der én
-                    gratis lærer/voksen med.
-                </p>
-                <p>
-                    Efter booking vil du modtage en mail som bekræftelse på
-                    bestillingen.
-                </p>
-                <h3>Udforsk vores forskellige undervisningsoplæg nedenfor!</h3>
-                <section id="one-two-grid">
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Mød Gårdens Husdyr</h2>
-                            <p>Klassetrin: 0. til 2. klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Lær om pasning og pleje af gårdens husdyr som
-                                    æsler, geder, får og grise. Eleverne får
-                                    mulighed for at lære om dyrenes daglige rutiner
-                                    og deres betydning for landbruget.
-                                </p>
-                                <h3>Relevans for fælles mål</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning1.png"
-                        alt="Billede af en pige der holder en ged" />
-                </section>
-                <section id="two-one-grid">
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning2.png"
-                        alt="Billede af børn der holder kaniner" />
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Dyk ned i Dyrenes Verden</h2>
-                            <p>Klassetrin: 3. til 6. klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Vi udforsker husdyrs anatomi, pasning og pleje
-                                    med et fokus på dyrenes fysiske egenskaber og
-                                    behov.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="one-two-grid">
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Kæledyrspleje og ansvar</h2>
-                            <p>Klassetrin: 0. til 6. klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Vi undersøger både almindelige og eksotiske
-                                    kæledyr og diskuterer, hvad man skal vide, før
-                                    man anskaffer sig et kæledyr.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturomårder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning3.png"
-                        alt="Billede af en kat" />
-                </section>
-                <section id="two-one-grid">
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning4.png"
-                        alt="Billede af dreng der holder en kat" />
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Kæledyr og sanseoplevelser</h2>
-                            <p>Klassetrin: Specialklasser</p>
-                            <p>Varighed: 45 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <h3>
-                                    Denne tur har fokus en række unikke læringsmål:
-                                </h3>
-                                <h4>Styrker Sociale Færdigheder</h4>
-                                <p>
-                                    Gennem interaktion med dyrene og hinanden får
-                                    eleverne mulighed for at øve sociale færdigheder
-                                    i en afslappet og støttende atmosfære.
-                                </p>
-                                <h4>Fremmer Empati og Ansvar</h4>
-                                <p>
-                                    Kontakt med dyr kan hjælpe eleverne med at
-                                    udvikle empati og en følelse af ansvar, da de
-                                    lærer om dyrenes behov og pleje.
-                                </p>
-                                <h4>Stimulerer Læring og Nysgerrighed</h4>
-                                <p>
-                                    Vores hands-on tilgang til læring vækker
-                                    elevernes nysgerrighed og interesse for natur og
-                                    dyreliv.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="one-two-grid">
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>De Uventede Gæster</h2>
-                            <p>Klassetrin: 0. til 6. Klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Vi undersøger både almindelige og eksotiske
-                                    kæledyr og diskuterer, hvad man skal vide, før
-                                    man anskaffer sig et kæledyr.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturomårder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning5.png"
-                        alt="Billede af piger der holder en killing" />
-                </section>
-                <section id="two-one-grid">
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning6.png"
-                        alt="Billede af en høne" />
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Hønsehusets Hemmeligheder</h2>
-                            <p>Klassetrin: 0. til 2. klasse</p>
-                            <p>Varighed: 45 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Udforsk de mange forskellige arter blandt
-                                    hønsefuglene og lær om deres pleje og pasning.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>Unikke læringsmål</h4>
-                                <p>
-                                    Styrker Sociale Færdigheder gennem interaktion
-                                    med dyrene
-                                </p>
-                                <p>Fremmer Empati og Ansvar</p>
-                                <p>Stimulerer Læring og Nysgerrighed</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="one-two-grid">
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Flyvende Vidundere</h2>
-                            <p>Klassetrin: 2. til 6. Klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Undersøg fuglens opbygning og find ud af, hvad
-                                    der gør, at de kan flyve. Lær at identificere
-                                    fuglens føde ud fra næb, klør og vinger.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturomårder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning7.png"
-                        alt="Billede af en påfugl" />
-                </section>
-                <section id="two-one-grid">
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning8.png"
-                        alt="Billede af en abe" />
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Dyrenes Evolution og tilpasning</h2>
-                            <p>Klassetrin: 3. til 6. klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Undersøg fuglens opbygning og find ud af, hvad
-                                    der gør, at de kan flyve. Lær at identificere
-                                    fuglens føde ud fra næb, klør og vinger.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturomårder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                                <p>Eleven kan fortælle om livets udvikling</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="one-two-grid">
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Aktivering og Berigelse af Dyr</h2>
-                            <p>Klassetrin: 0. til 6. Klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Vi diskuterer, hvorfor aktivering og berigelse
-                                    er essentielt for dyr i fangenskab. Eleverne
-                                    udarbejder aktiveringslegetøj til dyrene og
-                                    placerer det i deres anlæg.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>
-                                    Eleven kan fortælle om ændringer i naturen
-                                    baseret på årstiden
-                                </p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>
-                                    Eleven har viden om dyrs og planters levesteder
-                                    og livsbetingelser
-                                </p>
-                                <p>
-                                    Eleven kan fortælle om dyre- og planteliv andre
-                                    steder på jorden
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturområder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUndervisning9.png"
-                        alt="Billede af to grise" />
-                </section>
-                <section id="two-one-grid">
-                    <img
-                        id="image-grid"
-                        src="./assets/img/FarmFunUnvervisning10.png"
-                        alt="Billede af en abe" />
-                    <div class="buy-card">
-                        <div class="card-header">
-                            <h2>Pattedyrs Forunderlige Verden</h2>
-                            <p>Klassetrin: 0. til 6. klasse</p>
-                            <p>Varighed: 60 minutter</p>
-                            <button>Book Tur</button>
-                        </div>
-                        <div class="card-content-container-no-grid">
-                            <div class="buy-card-content">
-                                <p>
-                                    Undersøg fuglens opbygning og find ud af, hvad
-                                    der gør, at de kan flyve. Lær at identificere
-                                    fuglens føde ud fra næb, klør og vinger.
-                                </p>
-                                <h3>Relevans for fælles mål:</h3>
-                                <h4>2. Klasse - Organismer</h4>
-                                <p>Eleven har viden om dyr, planter og svampe</p>
-                                <p>Eleven har viden om organismers årscyklus</p>
-                                <p>Eleven har viden om organismers opbygning</p>
-                                <h4>4. Klasse - Naturen globalt og lokalt</h4>
-                                <p>Eleven har viden om hovedgrupper af sten</p>
-                                <p>
-                                    Eleven har viden om klassifikation af dyr,
-                                    planter og svampe
-                                </p>
-                                <p>
-                                    Elven har viden om dyrs og planters levesteder
-                                    og livsbetingesler
-                                </p>
-                                <p>
-                                    Eleven kan fortælle om dyre og planteliv andre
-                                    stedet på Jorden
-                                </p>
-                                <p>
-                                    Eleven har viden om menneskets påvirkining af
-                                    naturområder gennem tiden
-                                </p>
-                                <h4>6. Klasse - Natur og miljø</h4>
-                                <p>Eleven har viden om karakteriske naturomårder</p>
-                                <p>
-                                    Eleven har viden om enkle fødekæder og fødenet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  <body>
+    <nav></nav>
+    <header class="headerWave">
+      <h1>Undervisningsbesøg</h1>
+    </header>
+    <main>
+      <div id="stickyContactContainer"></div>
+      <div class="mainContent">
+        <div id="undervisningIntro">
+          <div>
+            <p>
+              Vores undervisningsforløb kombinerer teoretisk undervisning med
+              hands-on oplevelser, der giver eleverne mulighed for at lugte, se,
+              føle og interagere med dyrene. En typisk undervisningssession
+              varer mellem 60-90 minutter og inkluderer både en teoretisk del og
+              en praktisk del.
+            </p>
+            <h4>Forløbets Struktur</h4>
+            <p>
+              Formidlerne bruger en blanding af faglig og personlig viden samt
+              effekter fra dyrene for at give eleverne en dybdegående forståelse
+              af de emner, der undervises i. En kort pause giver eleverne
+              mulighed for at reflektere over deres nye viden. Eleverne får
+              mulighed for at anvende deres teoretiske viden i praksis ved at
+              interagere med dyrene. Efter undervisningen er der rig mulighed
+              for eleverne at udforske Farm Fun på egen hånd og fordybe sig
+              yderligere i det, de har lært.
+            </p>
+          </div>
+          <div>
+            <h4>Priser og Booking</h4>
+            <p>Undervisningsforløb inkl. opfølgning: 500kr</p>
+            <p>Entré per person: 50kr</p>
+            <p>
+              Minimum 12 elever pr. booking. For hver 12 elever er der én gratis
+              lærer/voksen med.
+            </p>
+            <p>
+              Efter booking vil du modtage en mail som bekræftelse på
+              bestillingen.
+            </p>
+            <h3>Udforsk vores forskellige undervisningsoplæg nedenfor!</h3>
+          </div>
+        </div>
+
+        <section id="one-two-grid">
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Mød Gårdens Husdyr</h2>
+              <p>Klassetrin: 0. til 2. klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
             </div>
-        </main>
-        <footer></footer>
-    </body>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Lær om pasning og pleje af gårdens husdyr som æsler, geder,
+                  får og grise. Eleverne får mulighed for at lære om dyrenes
+                  daglige rutiner og deres betydning for landbruget.
+                </p>
+                <h3>Relevans for fælles mål</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+              </div>
+            </div>
+          </div>
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning1.png"
+            alt="Billede af en pige der holder en ged"
+          />
+        </section>
+        <section id="two-one-grid">
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning2.png"
+            alt="Billede af børn der holder kaniner"
+          />
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Dyk ned i Dyrenes Verden</h2>
+              <p>Klassetrin: 3. til 6. klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Vi udforsker husdyrs anatomi, pasning og pleje med et fokus på
+                  dyrenes fysiske egenskaber og behov.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>Elven har viden om dyrs og planters levesteder</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="one-two-grid">
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Kæledyrspleje og ansvar</h2>
+              <p>Klassetrin: 0. til 6. klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Vi undersøger både almindelige og eksotiske kæledyr og
+                  diskuterer, hvad man skal vide, før man anskaffer sig et
+                  kæledyr.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>Elven har viden om dyrs og planters levesteder</p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturomårder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+              </div>
+            </div>
+          </div>
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning3.png"
+            alt="Billede af en kat"
+          />
+        </section>
+        <section id="two-one-grid">
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning4.png"
+            alt="Billede af dreng der holder en kat"
+          />
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Kæledyr og sanseoplevelser</h2>
+              <p>Klassetrin: Specialklasser</p>
+              <p>Varighed: 45 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <h3>Denne tur har fokus en række unikke læringsmål:</h3>
+                <h4>Styrker Sociale Færdigheder</h4>
+                <p>
+                  Gennem interaktion med dyrene og hinanden får eleverne
+                  mulighed for at øve sociale færdigheder i en afslappet og
+                  støttende atmosfære.
+                </p>
+                <h4>Fremmer Empati og Ansvar</h4>
+                <p>
+                  Kontakt med dyr kan hjælpe eleverne med at udvikle empati og
+                  en følelse af ansvar, da de lærer om dyrenes behov og pleje.
+                </p>
+                <h4>Stimulerer Læring og Nysgerrighed</h4>
+                <p>
+                  Vores hands-on tilgang til læring vækker elevernes
+                  nysgerrighed og interesse for natur og dyreliv.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="one-two-grid">
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>De Uventede Gæster</h2>
+              <p>Klassetrin: 0. til 6. Klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Vi undersøger både almindelige og eksotiske kæledyr og
+                  diskuterer, hvad man skal vide, før man anskaffer sig et
+                  kæledyr.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>Elven har viden om dyrs og planters levesteder</p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturomårder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+              </div>
+            </div>
+          </div>
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning5.png"
+            alt="Billede af piger der holder en killing"
+          />
+        </section>
+        <section id="two-one-grid">
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning6.png"
+            alt="Billede af en høne"
+          />
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Hønsehusets Hemmeligheder</h2>
+              <p>Klassetrin: 0. til 2. klasse</p>
+              <p>Varighed: 45 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Udforsk de mange forskellige arter blandt hønsefuglene og lær
+                  om deres pleje og pasning.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>Unikke læringsmål</h4>
+                <p>Styrker Sociale Færdigheder gennem interaktion med dyrene</p>
+                <p>Fremmer Empati og Ansvar</p>
+                <p>Stimulerer Læring og Nysgerrighed</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="one-two-grid">
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Flyvende Vidundere</h2>
+              <p>Klassetrin: 2. til 6. Klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Undersøg fuglens opbygning og find ud af, hvad der gør, at de
+                  kan flyve. Lær at identificere fuglens føde ud fra næb, klør
+                  og vinger.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>Elven har viden om dyrs og planters levesteder</p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturomårder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+              </div>
+            </div>
+          </div>
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning7.png"
+            alt="Billede af en påfugl"
+          />
+        </section>
+        <section id="two-one-grid">
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning8.png"
+            alt="Billede af en abe"
+          />
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Dyrenes Evolution og tilpasning</h2>
+              <p>Klassetrin: 3. til 6. klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Undersøg fuglens opbygning og find ud af, hvad der gør, at de
+                  kan flyve. Lær at identificere fuglens føde ud fra næb, klør
+                  og vinger.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>Elven har viden om dyrs og planters levesteder</p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturomårder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+                <p>Eleven kan fortælle om livets udvikling</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="one-two-grid">
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Aktivering og Berigelse af Dyr</h2>
+              <p>Klassetrin: 0. til 6. Klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Vi diskuterer, hvorfor aktivering og berigelse er essentielt
+                  for dyr i fangenskab. Eleverne udarbejder aktiveringslegetøj
+                  til dyrene og placerer det i deres anlæg.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>
+                  Eleven kan fortælle om ændringer i naturen baseret på årstiden
+                </p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>
+                  Eleven har viden om dyrs og planters levesteder og
+                  livsbetingelser
+                </p>
+                <p>
+                  Eleven kan fortælle om dyre- og planteliv andre steder på
+                  jorden
+                </p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturområder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+              </div>
+            </div>
+          </div>
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUndervisning9.png"
+            alt="Billede af to grise"
+          />
+        </section>
+        <section id="two-one-grid">
+          <img
+            id="image-grid"
+            src="./assets/img/FarmFunUnvervisning10.png"
+            alt="Billede af en abe"
+          />
+          <div class="buy-card">
+            <div class="card-header">
+              <h2>Pattedyrs Forunderlige Verden</h2>
+              <p>Klassetrin: 0. til 6. klasse</p>
+              <p>Varighed: 60 minutter</p>
+              <button>Book Tur</button>
+            </div>
+            <div class="card-content-container-no-grid">
+              <div class="buy-card-content">
+                <p>
+                  Undersøg fuglens opbygning og find ud af, hvad der gør, at de
+                  kan flyve. Lær at identificere fuglens føde ud fra næb, klør
+                  og vinger.
+                </p>
+                <h3>Relevans for fælles mål:</h3>
+                <h4>2. Klasse - Organismer</h4>
+                <p>Eleven har viden om dyr, planter og svampe</p>
+                <p>Eleven har viden om organismers årscyklus</p>
+                <p>Eleven har viden om organismers opbygning</p>
+                <h4>4. Klasse - Naturen globalt og lokalt</h4>
+                <p>Eleven har viden om hovedgrupper af sten</p>
+                <p>
+                  Eleven har viden om klassifikation af dyr, planter og svampe
+                </p>
+                <p>
+                  Elven har viden om dyrs og planters levesteder og
+                  livsbetingesler
+                </p>
+                <p>
+                  Eleven kan fortælle om dyre og planteliv andre stedet på
+                  Jorden
+                </p>
+                <p>
+                  Eleven har viden om menneskets påvirkining af naturområder
+                  gennem tiden
+                </p>
+                <h4>6. Klasse - Natur og miljø</h4>
+                <p>Eleven har viden om karakteriske naturomårder</p>
+                <p>Eleven har viden om enkle fødekæder og fødenet</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>

@@ -1,14 +1,11 @@
-#two-one-grid {
+#two-one-grid, #one-two-grid  {
     display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 40px;
-    padding: 40px;
-    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+    padding-top: 10vh;
    
 }
-#one-two-grid{
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: 40px;
-    padding: 40px;   
+#twoImagesOvernatning {
+    width: 100%;
+    border-radius: 20px;
 }

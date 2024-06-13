@@ -4,17 +4,28 @@
 #privateEvents{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-    padding: 40px;
+
+
 }
 #birthday-content{
-    padding-inline: 100px;
+    padding: 2rem;
 }
-#birthday-content p{
-    padding-block: 1.5rem;
+#birthday-content p {
+    padding-top: 1rem;
 }
+
+
 #image-grid{
-    max-width: 600px;
+    width: 100%;
     border-radius: 20px;
-    margin-bottom: 20px;
 }
+
+
+#imageBirthday {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+}
+
+
