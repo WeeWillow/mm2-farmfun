@@ -8,6 +8,7 @@
     height: 450px;
     margin-bottom: 2rem;
     border-radius: 1rem;
+    object-fit: cover;
   }
 }
 
@@ -53,8 +54,8 @@
     align-items: center;
   }
   img {
-  width: 400px;
-  height: 180px;
+  min-width: 100%;
+  height: 150px;
   object-fit: cover;
   }
 }
