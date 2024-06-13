@@ -1,37 +1,62 @@
 //Intro tekst afsnit
-.introTekst {
+.intro {
   display: flex;
-}
-.introTekst p {
-  color: $greenBlack;
-  width: 70ch;
-  font-size: 1.2rem;
+  gap: 1rem;
+
+  img {
+    width: 50%;
+    height: 450px;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+  }
 }
 
-.introTekst img {
-  width: 66%;
-  height: 450px;
-  margin-bottom: 200px;
+.menuH2 {
+  margin: 2rem auto;
+  text-align: center;
+  color: $greenBlack;
 }
-//Foodcards afsnit
+
+//Kiosk sektionen nederst
+
+.kioskTekst {
+  font-family: 'overpass', sans-serif;
+  font-size: 1.2rem;
+  color: $greenBlack;
+  width: 50ch;
+}
+
+.kioskTekst h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+.kioskTekst ul {
+  list-style-type: none;
+}
+.kioskTekst ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+// Foodcards afsnit
 .foodCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
+  gap: 1rem;
 
-.foodCards article {
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.foodCards img {
-  width: 500px;
-  height: 300px;
+  article {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+  width: 400px;
+  height: 180px;
   object-fit: cover;
+  }
 }
 
 .foodInfo {
@@ -64,22 +89,4 @@
   margin-left: 5px;
   min-width: 50px;
   text-align: right;
-}
-//Kiosk sektionen nederst
-.kioskTekst {
-  width: 100%;
-  color: $greenBlack;
-  margin-top: 100px;
-}
-.kioskTekst h2 {
-  font-size: 1.8em;
-  margin-bottom: 30px;
-}
-.kioskTekst ul {
-  list-style-type: none;
-}
-.kioskTekst ul li {
-  font-size: 1em;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
