@@ -3,8 +3,8 @@
     /*Forside og oplevelsesoversigt*/
     #index.grid section, .grid section {
         flex-direction: column;
-
     }
+
     #index.grid svg {
         align-self: center;
 
@@ -85,7 +85,10 @@
     .infoBoxes {
         height: 100%;
     }
+.dyrepassercontainer, .card-content-container {
+    grid-template-columns: repeat(1, 1fr);
 
+}
     .mainContent {
 
 /* Grid 3 columns - 1000px */
@@ -101,13 +104,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-
-
-}
-
-.dyrepassercontainer {
-    grid-template-columns: repeat(1, 1fr);
-
 }
 
 /* Oversigtskort */
