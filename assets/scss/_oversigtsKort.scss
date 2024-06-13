@@ -1,15 +1,11 @@
-
-
 #oversigtskortOgBeskrivelse p {
     margin-top: 2rem;
 }
 
 #oversigtskortIMG {
-    
     width: 100%;
     height: 100%;
     object-fit: contain;
-
 }
 
 .oversigtskortOverskift {
@@ -18,10 +14,10 @@
     text-align: center;
     margin: 2rem;
 }
+
 .oversigtskortCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
 }
 
 .oversigtskortCards div {
@@ -32,7 +28,6 @@
     display: flex;
     align-items: center;
     padding: 1.5rem;
-
 }
 
 .oversigtskortCards div p {
@@ -40,10 +35,11 @@
 }
 
 
-.oversigtskortCards div span, .oversigtskortCards div i {
+.oversigtskortCards div span,
+.oversigtskortCards div i {
     color: $secondaryGreen;
     font-size: $subheadingText;
     padding: .5rem;
-    margin-right: .5em ;
+    margin-right: .5em;
 
 }
