@@ -1,0 +1,85 @@
+//Intro tekst afsnit
+.introTekst {
+  display: flex;
+}
+.introTekst p {
+  color: $greenBlack;
+  width: 70ch;
+  font-size: 1.2rem;
+}
+
+.introTekst img {
+  width: 66%;
+  height: 450px;
+  margin-bottom: 200px;
+}
+//Foodcards afsnit
+.foodCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.foodCards article {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foodCards img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.foodInfo {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $secondaryGreen;
+  min-height: 75px;
+  border-radius: 0 0 20px 20px;
+  color: $greenBlack;
+}
+
+.foodTitle {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.foodDetails {
+  padding-right: 20px;
+}
+
+.foodDetails .madInformation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foodDetails .madInformation span {
+  margin-left: 5px;
+  min-width: 50px;
+  text-align: right;
+}
+//Kiosk sektionen nederst
+.kioskTekst {
+  width: 100%;
+  color: $greenBlack;
+  margin-top: 100px;
+}
+.kioskTekst h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+.kioskTekst ul {
+  list-style-type: none;
+}
+.kioskTekst ul li {
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
