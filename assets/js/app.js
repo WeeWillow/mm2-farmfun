@@ -61,7 +61,7 @@ const navContent = `
       <a href="./index.html" title="Forside"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a>
       <div class="mapBtn"><a href="./oversigtsKort.html"><i class="fa-solid fa-map"></i></a></div>
       <div class="searchBar"><i class="fa-solid fa-magnifying-glass"></i></div>
-    </div>
+      </div>
       <i class="fa-solid fa-bars burger-menu"></i>
     <ul>
       <li><a href="./index.html"><i class="fa-solid fa-warehouse"></i> Forside</a></li>
@@ -94,17 +94,41 @@ const navContent = `
 navElement.innerHTML = navContent;
 
 const burgerMenu = document.querySelector(".burger-menu");
-const navUl = document.querySelector("nav ul");
-const closeMenu = document.querySelector(".close-menu");
+const dropdowns = document.querySelectorAll(".dropdown");
 
 burgerMenu.addEventListener("click", () => {
-  navUl.classList.add("show");
+  navElement.classList.toggle("show");
 });
 
-closeMenu.addEventListener("click", () => {
-  navUl.classList.remove("show");
+// toggle dropdown når du trykker på burgermenu
+dropdowns.forEach(dropdown => {
+  const dropdownTitle = dropdown.querySelector('.dropdownTitle');
+  if (dropdownTitle) {
+    dropdownTitle.addEventListener("click", (e) => {
+      // hold dropdown åben når du trykker på et navpunkt
+      e.stopPropagation();
+
+      // toggle dropdown mobil
+      if (window.innerWidth <= 800) {
+        dropdown.classList.toggle("active");
+      }
+    });
+  }
 });
 
+// luk dropdown når man klikker udenfor menu
+document.addEventListener('click', (e) => {
+  if (window.innerWidth <= 800) {
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("active");
+      }
+    });
+  }
+});
+
+
+// footer
 const footerContent = `
 <div class="footLinks">
       <ul>

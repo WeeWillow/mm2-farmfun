@@ -1,5 +1,6 @@
 #stickyContactBtn {
   position: fixed;
+  z-index: 10;
   bottom: 8vh;
   right: 10vw;
   font-family: "Overpass", sans-serif;
