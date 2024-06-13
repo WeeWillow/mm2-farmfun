@@ -1,0 +1,25 @@
+#Priser{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+#Hojseason{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+#lavseason-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+#lavseason-heading{
+padding: 20px;
+}
+#lavseason-heading h3, p{
+    text-align: center;
+}
+

@@ -1,0 +1,70 @@
+
+  .dyrepassercontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  .buy-card {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .card-header {
+    background-color: #679578;
+    color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-header p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .card-header button {
+    background-color: #ffb784;
+    border: none;
+    color: #f2f2f2;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    bottom: -40px;
+    position: relative;
+  }
+  
+  .card-header button:hover {
+    background-color: #FF9940;
+  }
+  
+  .card-content-container {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 20px;
+  }
+  
+  .buy-card-content {
+    padding-top: 20px;
+    text-align: left;
+  }
+  
+  .buy-card-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .buy-card-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }

@@ -1,0 +1,20 @@
+.card-content-container-no-grid{
+    padding: 60px;
+}
+#privateEvents{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 40px;
+}
+#birthday-content{
+    padding-inline: 100px;
+}
+#birthday-content p{
+    padding-block: 1.5rem;
+}
+#image-grid{
+    max-width: 600px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}

@@ -1,31 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- META END -->
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Font Awesome END -->
+        <link rel="stylesheet" href="./assets/css/style.min.css" />
+        <script src="./assets/js/app.js" defer></script>
+        <title>Farm Fun</title>
+    </head>
 
-<head>
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- META END -->
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Font Awesome END -->
-  <link rel="stylesheet" href="./assets/css/style.min.css">
-  <script src="./assets/js/app.js" defer></script>
-  <title>Farm Fun</title>
-</head>
+    <body>
+        <nav></nav>
+        <header>
+            <h1>Åbningstider og Priser</h1>
+            <div id="Tabs">
+                <button id="tab">Billet Priser</button>
+                <button id="tab">Åbningstider</button>
+            </div>
+        </header>
+        <main>
+            <section id="Priser">
+                <div class="buy-card">
+                    <div class="card-header">
+                        <h2>Engangsbillet</h2>
+                        <p>90 KR</p>
+                        <button>Køb Billet</button>
+                    </div>
+                    <div class="card-content-container-no-grid">
+                        <div class="buy-card-content">
+                            <p>Priserne afhænger af sæsonen</p>
+                            <p>Sæsonstart (27/4 til 23/6): 90Kr</p>
+                            <p>24/6 til 1/9: 110Kr</p>
+                            <p>2/9 til 20/10: 90Kr</p>
+                            <p>Vinterferien: 13, 14, 20, 21 Feb.: 50Kr</p>
+                            <p>Påskeferien: 28. til 31. Mar: 50Kr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-card">
+                    <div class="card-header">
+                        <h2>Sæsonkort</h2>
+                        <p>300 KR</p>
+                        <button>Køb Sæsonkort</button>
+                    </div>
+                    <div class="card-content-container-no-grid">
+                        <div class="buy-card-content">
+                            <p>
+                                Kortet skal medbringes hver gang og fremvises
+                                ved lugen inden du parkerer.
+                            </p>
+                            <p>Kortet er personligt og kan kun bruges af dig</p>
+                            <p>
+                                Kortet kan ikke bruges udenfor almindelig
+                                åbningstid eller ved leje af Junglelejren og kan
+                                ikke kombineres med andre rabatter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-card">
+                    <div class="card-header">
+                        <h2>Ugekort</h2>
+                        <p>250 KR</p>
+                        <button>Køb Ugekort</button>
+                    </div>
+                    <div class="card-content-container-no-grid">
+                        <div class="buy-card-content">
+                            <p>
+                                Kortet skal medbringes hver gang og fremvises
+                                ved lugen inden du parkerer.
+                            </p>
+                            <p>Kortet er personligt og kan kun bruges af dig</p>
+                            <p>
+                                Kortet kan ikke bruges udenfor almindelig
+                                åbningstid eller ved leje af Junglelejren og kan
+                                ikke kombineres med andre rabatter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Åbningstider">
+                <section id="Hojseason">
+                    <div class="buy-card">
+                        <div class="card-header">
+                            <h2>27. Apr - 23. Maj</h2>
+                        </div>
+                        <div class="card-content-container-no-grid">
+                            <div class="buy-card-content">
+                                <p>Alle Dage</p>
+                                <p>10-18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-card">
+                        <div class="card-header">
+                            <h2>26. Maj - 1. Sep</h2>
+                        </div>
+                        <div class="card-content-container-no-grid">
+                            <div class="buy-card-content">
+                                <p>26. Maj - 30. Jun: 10-18</p>
+                                <p>1. Jul - 11. Aug: 10-19</p>
+                                <p>12. Aug - 1. Sep: 10-17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-card">
+                        <div class="card-header">
+                            <h2>2. Sep - 1. Okt</h2>
+                        </div>
+                        <div class="card-content-container-no-grid">
+                            <div class="buy-card-content">
+                                <p>Alle Dage</p>
+                                <p>10-17</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="lavseason">
+                    <div id="lavseason-heading">
+                        <h3>Åbningstider udenfor Højsæsonen</h3>
+                        <p>
+                            Det er stadig muligt at besøge Farm Fun udenfor
+                            vores højsæson på disse tidspunkter
+                        </p>
+                    </div>
+                    <div id="lavseason-cards">
+                        <div class="buy-card">
+                            <div class="card-header">
+                                <h2>Vinterferien</h2>
+                            </div>
+                            <div class="card-content-container-no-grid">
+                                <div class="buy-card-content">
+                                    <p>Tirsdag og Onsdag i uge 7 og 8</p>
+                                    <p>11-15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-card">
+                            <div class="card-header">
+                                <h2>Påskeferien</h2>
+                            </div>
 
-<body>
-  <nav></nav>
-  <header>
-  </header>
-  <main>
-  </main>
-  <footer></footer>
-</body>
-
+                            <div class="card-content-container-no-grid">
+                                <div class="buy-card-content">
+                                    <p>Skærtorsdag til og med Påskesøndag</p>
+                                    <p>11-15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-card">
+                            <div class="card-header">
+                                <h2>Efterårsferien</h2>
+                            </div>
+                            <div class="card-content-container-no-grid">
+                                <div class="buy-card-content">
+                                    <p>Alle Dage i Efterårsferien</p>
+                                    <p>10-17</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy-card">
+                            <div class="card-header">
+                                <h2>Juleaften</h2>
+                            </div>
+                            <div class="card-content-container-no-grid">
+                                <div class="buy-card-content">
+                                    <p>Åbent Juleaften</p>
+                                    <p>9-12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
 </html>

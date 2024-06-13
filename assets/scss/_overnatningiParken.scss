@@ -1,0 +1,16 @@
+#two-one-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 40px;
+    padding: 40px;
+    margin: auto;
+   
+}
+#one-two-grid{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 40px;
+    padding: 40px;
+    
+    
+}
