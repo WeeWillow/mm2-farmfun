@@ -25,6 +25,12 @@ p {
 
 #kontaktSide {
 
+  .mainContent {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
   form {
     display: flex;
     flex-direction: column;
