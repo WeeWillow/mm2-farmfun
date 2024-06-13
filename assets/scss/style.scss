@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 // typography
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 // general styling
 * {
@@ -42,4 +42,4 @@ main {
 }
 
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
-@import "globalNav", "footer", "indexForside", "dyrePasserTur", "privateEvents", "overnatningiParken", "billetterOgPriser", "undervisningsBesoeg", "grill", "omFarmFun", "praktiskInformation", "oversigtsKort", "sponsorat", "kontakt", "stickyKontakt", "enkeltDyr";
+@import "globalNav", "footer", "indexForside", "dyrePasserTur", "privateEvents", "overnatningiParken", "billetterOgPriser", "undervisningsBesoeg", "grill", "omFarmFun", "praktiskInformation", "oversigtsKort", "sponsorat", "kontakt", "stickyKontakt", "enkeltDyr", "voresDyr";

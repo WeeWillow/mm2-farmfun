@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- META END -->
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Font Awesome END -->
-    <link rel="stylesheet" href="./assets/css/style.min.css" />
-    <script src="./assets/js/app.js" defer></script>
-    <script src="./assets/js/enkeltDyr.js" defer></script>
-    <title>Farm Fun</title>
-  </head>
+
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META END -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Font Awesome END -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <script src="./assets/js/app.js" defer></script>
+  <script src="./assets/js/voresDyr.js" defer></script>
+  <script src="./assets/js/enkeltDyr.js" defer></script>
+  <title>Farm Fun</title>
+</head>
 
   <body>
     <nav></nav>
-    <header><div class="enkeltDyr"></div></header>
-    <main></main>
+    <header>
+      <div class="tekstAfsnit">
+        <h1>Parkens dyr</h1>
+        <p>
+          Hos Farm Fun finder du over 500 dyr fordelt på 10 tønder naturskønt
+          land. Her kan I både møde eksotiske og traditionelle dyr, med mulighed
+          for at komme helt tæt på mange af dem! Gå på opdagelse i parkens store
+          udvalg af spændende dyr nedenfor.
+        </p>
+      </div>
+      <img src="./assets/img/Silkeabe.jpeg" alt="Billede af Silkeabe" />
+    </header>
+    <main>
+      <div class="mainContent">
+        <section class="sortingKnapper">
+          <button class="sorteringsBtn" data-category="rovdyr">Rovdyr</button>
+          <button class="sorteringsBtn" data-category="fugle">Fugle</button>
+          <button class="sorteringsBtn" data-category="gnavere">Gnavere</button>
+          <button class="sorteringsBtn" data-category="klov-hovdyr">
+            Klov & Hovdyr
+          </button>
+        </section>
+        <section class="animalCards"></section>
+        <button id="seFlereBtn">Se flere dyr</button>
+        <section class="mapSektion">
+          <h2>Se hvor du kan finde dyrene på vores oversigtskort</h2>
+          <a href="#" class="mapBtn">Se oversigtskort</a>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

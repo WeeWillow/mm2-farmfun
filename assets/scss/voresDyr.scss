@@ -1,0 +1,146 @@
+//Header sektion
+header {
+  display: flex;
+}
+.tekstAfsnit {
+  width: 33%;
+  padding-right: 20px;
+  color: $white;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.tekstAfsnit p{
+  margin-top: 100px;
+  width: 70ch;
+}
+header img {
+  width: 50%;
+  max-height: 500px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+//Dyrecards
+.animalCards img {
+  object-fit: cover;
+  height: 35vh;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.animalCards a {
+  text-decoration: none;
+}
+
+.animalCards h2 {
+  margin-top: 0.5rem;
+  color: $greenBlack;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Animal Overview */
+
+.animalCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+  gap: 1rem;
+}
+
+/* Animal cards */
+@media screen and (max-width: 1000px) {
+  .animalCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .animalCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .animalCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+
+
+
+
+/* Sorteringsknapper*/
+.sortingKnapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.sorteringsBtn {
+  background-color: $accent;
+  border: none;
+  color: $greenBlack;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.sorteringsBtn:hover {
+  background-color: $accentHover;
+}
+
+//Se flere knap
+#seFlereBtn {
+  display: block;
+  margin: 2rem auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $greenBlack;
+  background-color: $accent;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+#seFlereBtn:hover {
+  background-color: $accentHover;
+}
+
+//Kort sektionen nederst
+.mapSektion {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.mapSektion h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #1a4a3f;
+}
+
+.mapBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #1a4a3f;
+  background-color: #ffb780;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mapBtn:hover {
+  background-color: #ffa726;
+}
