@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', renderStickyContact);
 // set content for nav
 const navContent = `
 <div class="navLeft">
-      <a href="./index.html"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a>
+      <a href="./index.html" title="Forside"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a>
       <div class="mapBtn"><a href="./oversigtsKort.html"><i class="fa-solid fa-map"></i></a></div>
       <div class="searchBar"><i class="fa-solid fa-magnifying-glass"></i></div>
     </div>
@@ -81,7 +81,7 @@ const navContent = `
         <span class="dropdownTitle"><i class="fa-solid fa-calendar-day"></i> Dit Bes&oslash;g <i
             class="fa-solid fa-angle-down"></i></span>
         <ul class="dropdownList">
-          <li><a href="./billetterOgPriser.html">Billetter &amp; Priser</a></li>
+          <li><a href="./billetterOgPriser.html">&Aring;bningstider</a></li>
           <li><a href="./billetterOgPriser.html">Billetter &amp; Priser</a></li>
           <li><a href="./praktiskInformation.html">Praktisk Information</a></li>
         </ul>
@@ -101,10 +101,10 @@ const footerContent = `
       </ul>
     </div>
     <div class="footIcons">
-      <a href="https://www.facebook.com/FarmFun.VedAalbaek" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com/farmfunsjov/?hl=en" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
-      <a href="./kontakt.html"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.facebook.com/FarmFun.VedAalbaek" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/farmfunsjov/?hl=en" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="./kontakt.html" title="Kontakt"><i class="fa-solid fa-envelope"></i></a>
     </div>
-    <div class="footLogo"><a href="./index.html"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a></div>
+    <div class="footLogo"><a href="./index.html" title="Forside"><img src="./assets/img/FarmFun logo ny.svg" alt=""></a></div>
 `;
 footerElement.innerHTML = footerContent;
