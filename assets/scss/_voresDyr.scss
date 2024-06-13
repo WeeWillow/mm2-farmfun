@@ -9,9 +9,23 @@ header {
   margin-left: 100px;
   margin-top: 100px;
 }
+
+.flexContainer {
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  
+  svg {
+    margin: 4rem 0 0 2rem;
+  }
+}
+
 .tekstAfsnit p{
   margin-top: 100px;
-  width: 70ch;
+  width: 40ch;
 }
 header {
   #abeHero {
@@ -115,7 +129,8 @@ header {
   color: #1a4a3f;
 }
 
-.mapBtn {
+.mapSektion .mapBtn {
+  font-family: 'overpass', sans-serif;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.2em;
@@ -127,6 +142,6 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.mapBtn:hover {
+.mapSektion .mapBtn:hover {
   background-color: #ffa726;
 }
