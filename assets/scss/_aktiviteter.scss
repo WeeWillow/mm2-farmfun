@@ -1,26 +1,31 @@
 //Header sektion 
 header {
   display: flex;
+  gap: 1rem;
 }
+
 .tekstAfsnit {
   width: 50%;
   color: $white;
   margin-top: 100px;
 }
-.tekstAfsnit p{
+
+.tekstAfsnit p {
   margin-top: 100px;
   width: 70ch;
 }
+
 header img {
   width: 50%;
   max-height: 500px;
   margin-top: 100px;
 }
+
 //Aktivitetscards start
 .activityCards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -33,25 +38,22 @@ header img {
 
 .activityCards article {
   border-radius: 10px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  width: 50%;
+  height: 100%;
+  margin: 0 0 1.5rem 0;
 }
 
 .activityCards img {
-  width: 800px;
-  height: 400px;
-  display: block;
+  width: 40rem;
+  height: 15rem;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .activityCards h2 {
-  font-size: 1.2em;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -60,11 +62,14 @@ header img {
 .map-sektion {
   text-align: center;
   padding: 40px 20px;
+
+  a {
+    font-family: "overpass", sans-serif;
+  }
 }
 
 .map-sektion h2 {
   font-size: 1.5em;
-  margin-bottom: 20px;
   color: $greenBlack;
 }
 

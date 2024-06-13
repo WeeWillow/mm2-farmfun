@@ -8,6 +8,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Fredoka", sans-serif;
+  }
+
+  p {
+    font-family: "Overpass", sans-serif;
+  }
 }
 
 body {
@@ -40,10 +48,14 @@ main {
   min-height: 76vh;
 }
 
-#index .mainContent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+#index,
+#kontaktSide {
+
+  .mainContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 .mainContent {
