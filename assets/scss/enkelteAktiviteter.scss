@@ -1,0 +1,53 @@
+main {
+  background: $greenGradient;
+}
+.activityDetailCard {
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+}
+.activityDetailCard img {
+  border-radius: 20px;
+  width: 66%;
+  object-fit: cover;
+  max-height: 500px;
+  margin-top: 100px;
+}
+
+.activityInfo {
+  width: 33%;
+}
+
+.activityInfo h1 {
+  color: $white;
+  margin-top: 100px;
+}
+
+.activityInfo p {
+  color: $white;
+  max-width: 33%;
+  margin-right: 100px;
+}
+#beskrivelse {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#anbefaletAlder {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#seAlleBtn {
+  background-color: $accent;
+  color: $greenBlack;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#seAlleBtn:hover {
+  background-color: $accentHover;
+}
