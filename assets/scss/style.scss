@@ -42,4 +42,5 @@ main {
 }
 
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
-@import "globalNav", "footer", "indexForside", "dyrePasserTur", "privateEvents", "overnatningiParken", "billetterOgPriser", "undervisningsBesoeg", "grill", "omFarmFun", "praktiskInformation", "oversigtsKort", "sponsorat", "kontakt", "stickyKontakt", "enkeltDyr", "voresDyr", "enkelteAktiviteter", "aktiviteter", "kiosk", "mediaQueries";
+// De er sorteret i alfabetisk rækkefølge
+@import "aktiviteter", "billetterOgPriser", "dyrePasserTur", "enkeltDyr", "enkelteAktiviteter", "footer", "globalNav", "grill", "indexForside", "kiosk", "kontakt", "mediaQueries", "omFarmFun", "overnatningiParken", "oversigtsKort", "praktiskInformation", "privateEvents", "sponsorat", "stickyKontakt", "undervisningsBesoeg", "voresDyr";
