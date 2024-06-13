@@ -16,6 +16,11 @@
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.28);
+
+    &:hover {
+      transition: 0.1s ease-in-out;
+      color: $accentHover;
+    }
   }
 
   #stickyContactForm {
@@ -54,17 +59,19 @@
         border-radius: 0.5rem;
         box-shadow: inset 0px 3px 6px 0px rgba(44, 64, 45, 0.2);
 
-        &:focus-within {
+        &:focus-within,
+        :focus {
           background: $secondaryGreen;
-          border: 1px solid $primaryGreen;
+          outline: none;
+          border: 2px solid $primaryGreen;
           color: black;
         }
       }
 
       textarea {
         width: 100%;
-        height: 100px;
-        resize: vertical;
+        height: 110px;
+        resize: none;
       }
     }
 
@@ -78,7 +85,7 @@
 
       &:hover {
         color: $greenBlack;
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
         border: 2px solid $primaryGreen;
         background: $accent;
       }

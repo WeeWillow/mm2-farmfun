@@ -26,6 +26,13 @@ header {
     height: 25vh;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.28);
   }
+
+  h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: $white;
+  }
 }
 
 main {
