@@ -1,250 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META END -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome END -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <title>Farm Fun</title>
+  </head>
 
-<head>
-  <!-- META -->
-  <meta charset="UTF-8">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- META END -->
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Font Awesome END -->
-  <link rel="stylesheet" href="./assets/css/style.min.css">
-  <script src="./assets/js/app.js" defer></script>
-  <title>Farm Fun</title>
-</head>
-
-<body>
-  <nav></nav>
-  <header class="headerFullsize">
-    <div class="headerContent">
-      <div class="leftContent">
-        <div class="headerText">
-          <h2>Velkommen Til Farm Fun</h2>
-          <h1>Sjov &amp; L&aelig;ring For Hele Familien</h1>
+  <body>
+    <nav></nav>
+    <header class="headerFullsize">
+      <div class="headerContent">
+        <div class="leftContent">
+          <div class="headerText">
+            <h2>Velkommen Til Farm Fun</h2>
+            <h1>Sjov &amp; L&aelig;ring For Hele Familien</h1>
+          </div>
+          <div class="headerBtns">
+            <a href="./billetterOgPriser.html">
+              <div class="aabningstiderBtn">
+                <span> &Aring;bningstider </span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="koebBilletBtn">
+                <span> K&oslash;b Billet </span>
+              </div>
+            </a>
+          </div>
+          <div class="openToday">
+            <h3>Vi Har &Aring;bent Idag&excl;</h3>
+            <p><span>10:00</span> til <span>18:00</span></p>
+            <img id="maskot" src="./assets/img/FarmFunMaskotHero.png" alt="" />
+          </div>
         </div>
-        <div class="headerBtns">
-          <a href="./billetterOgPriser.html">
-            <div class="aabningstiderBtn">
-              <span>
-                &Aring;bningstider
-              </span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="koebBilletBtn">
-              <span>
-                K&oslash;b Billet
-              </span>
-            </div>
-          </a>
-        </div>
-        <div class="openToday">
-          <h3>Vi Har &Aring;bent Idag&excl;</h3>
-          <p><span>10:00</span> til <span>18:00</span></p>
-          <img id="maskot" src="./assets/img/FarmFunMaskotHero.png" alt="">
+        <div class="imgContainer">
+          <img src="./assets/img/FarmFunHeroImage.png" alt="" />
         </div>
       </div>
-      <div class="imgContainer">
-        <img src="./assets/img/FarmFunHeroImage.png" alt="">
+    </header>
+    <main id="index" class="grid">
+      <div id="stickyContactContainer"></div>
+      <div class="mainContent sections">
+        <section>
+          <div class="textContainer">
+            <h2>Velkommen!</h2>
+            <p>
+              Farm Fun ligger i et naturskønt område med skov, marker og
+              børnevenlige strande. Siden 1996 har vi været en elsket dyrepark
+              og legeland, kendt for vores åbne og frie atmosfære. Her kan I
+              opleve en spændende blanding af eksotiske dyr og bondegårdsdyr, og
+              vi har et væld af aktiviteter både indendørs og udendørs, der vil
+              begejstre børn i alle aldre.
+            </p>
+            <p>
+              Hos os kan børnene lege gammeldags lege og komme tæt på dyrene –
+              mange af dem kan de endda klappe. Farm Fun er et sted med masser
+              af frihed, åbenhed og plads til masser af sjov og oplevelser!
+            </p>
+            <p>
+              Hvis du mangler informationer, kan du trykke på knappen
+              nedenunder, for at blive klogere på praktiske informationer.
+            </p>
+            <a href="./praktiskInformation.html">
+              <div class="btn">Se praktisk info</div>
+            </a>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Capa_1"
+            x="0"
+            y="0"
+            version="1.1"
+            viewBox="0 0 511.999 511.999"
+            width="40%"
+            height="40%"
+          >
+            <defs>
+              <pattern id="imageSVGShape1" width="100%" height="100%">
+                <image
+                  href="./assets/img/velkommenBillede.jpg"
+                  preserveAspectRatio="xMidYMid slice"
+                  width="100%"
+                  height="100%"
+                ></image>
+              </pattern>
+            </defs>
+            <path
+              d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
+              fill="url(#imageSVGShape1)"
+            ></path>
+          </svg>
+        </section>
+        <section class="imgGalleri gradientBgr flexColumn">
+          <h2>Dyrelivet i parken</h2>
+          <p>
+            Farm Fun har en masse forskellige dyr i parken - fra papegøjer og
+            høns til vaskebjørne og geder.
+          </p>
+          <div class="slideGalleri">
+            <img src="./assets/img/drengOgAesel.jpg" alt="" />
+            <img src="./assets/img/drengOgPigeTraktor.jpg" alt="" />
+            <img src="./assets/img/familieVognTur.jpg" alt="" />
+            <img src="./assets/img/fodringAfSilkeaberFarmFun.jpg" alt="" />
+            <img src="./assets/img/abeHistorie.jpg" alt="" />
+            <img src="./assets/img/aberBliverFodret.jpg" alt="" />
+            <img src="./assets/img/farmFunOversigtskort.jpeg" alt="" />
+          </div>
+          <a href="./voresDyr.html">
+            <div class="btn">Udforsk vores dyr</div>
+          </a>
+        </section>
+        <section class="flexColumn">
+          <h2>Farm Fun for store og små!</h2>
+          <div class="sectionContainer">
+            <div class="box">
+              <img src="./assets/img/pigeMedKat.jpeg" alt="" />
+              <h3>æggejagt i påsken</h3>
+              <p>
+                Kom og oplev vores spændende æggejagt fredag i påsken. Her vil
+                der være mulighed for de yngste kan udforske parken gennem vores
+                unikke jagt efter påskeæg i parken!
+              </p>
+            </div>
+            <div class="box">
+              <img src="./assets/img/Æselridning.jpeg" alt="" />
+              <h3>æselridning for de yngste</h3>
+              <p>
+                Hver lørdag vil alle børn have mulighed for at en enestående
+                oplevelse ved en ridetur på vores æsel. Æslet vil give børnene
+                en fantastisk tur gennem parken, hvor der også vil være rig
+                mulighed for at kæle med æslet.
+              </p>
+            </div>
+            <div class="box">
+              <img src="./assets/img/Kiosk.jpg" alt="" />
+              <h3>Lækker mad i grillen</h3>
+              <p>
+                Efter en hel dag med sjov og oplevelser i parken, kan i stille
+                sulten i vores lækre kiosk. Her vil der være retter til både de
+                største og mindste, samt muligheder for snacks til resten af
+                dagen.
+              </p>
+            </div>
+          </div>
+          <a href="./aktiviteter.html">
+            <div class="btn">Se aktiviteter</div>
+          </a>
+        </section>
+        <section class="gradientBgr">
+          <div class="textContainer">
+            <h2>Sikkerhed i Parken</h2>
+            <p>
+              Her hos Farm Fun sætter vi sikkerheden i fokus. Vi forstår at det
+              kan være bekymrende at sende sine børn ud på forskellige
+              aktiviteter med større dyr og aktiviter, men hos os kan du trygt
+              slappe af. Vores erfarne medarbejdere tager hensyn for til at
+              skabe en tryg og sikker oplevelse for alle vores gæster.
+            </p>
+            <p>
+              Alle vores aktiviteter og dyreoplevelser er planlagt og overvåget
+              for at sikre, at de foregår under de sikreste forhold. Vores
+              medarbejdere er trænet i at håndtere dyr med omhu og faglighed, så
+              du som forælder kan være helt rolig.
+            </p>
+            <p>
+              Vi ønsker, at både børn og forældre får den bedste oplevelse, og
+              derfor er vi altid tilgængelige, hvis du har spørgsmål eller
+              bekymringer. Du er altid velkommen til at kontakte os – vi er her
+              for at hjælpe og sikre, at dit besøg hos Farm Fun bliver fyldt med
+              glæde og tryghed.
+            </p>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Capa_2"
+            x="0"
+            y="0"
+            version="1.1"
+            viewBox="0 0 511.999 511.999"
+            width="40%"
+            height="40%"
+          >
+            <defs>
+              <pattern id="imageSVGShape2" width="100%" height="100%">
+                <image
+                  href="./assets/img/ponyridningMedMedarbejder.jpg"
+                  preserveAspectRatio="xMidYMid slice"
+                  width="100%"
+                  height="100%"
+                ></image>
+              </pattern>
+            </defs>
+            <path
+              d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
+              fill="url(#imageSVGShape2)"
+            ></path>
+          </svg>
+        </section>
+        <section>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Capa_3"
+            x="0"
+            y="0"
+            version="1.1"
+            viewBox="0 0 511.999 511.999"
+            width="40%"
+            height="40%"
+          >
+            <defs>
+              <pattern id="imageSVGShape3" width="100%" height="100%">
+                <image
+                  href="./assets/img/kidsAwayFromScreen.jpg"
+                  preserveAspectRatio="xMidYMid slice"
+                  width="100%"
+                  height="100%"
+                ></image>
+              </pattern>
+            </defs>
+            <path
+              d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
+              fill="url(#imageSVGShape3)"
+            ></path>
+          </svg>
+          <div class="textContainer">
+            <h2>Få børnene væk fra skærmen, og ud i naturen!</h2>
+            <p>
+              Sidder dine børn limet fast til skærmen, og mangler I et hyggeligt
+              sted at tage hen som familie? Så er Farm Fun det perfekte valg.
+            </p>
+            <p>
+              Hos Farm Fun har vi masser af sjove aktiviteter og spændende dyr
+              der giver en lærerig oplevelse. Børnene vil elske at komme tæt på
+              dyrene og lære om deres liv på en måde, der er både sjov og
+              informativt.
+            </p>
+            <p>
+              Vi tilbyder guidede ture, hvor I kan møde dyrene helt tæt på.
+              Vores erfarne guider sørger for, at børnene får indblik i dyrenes
+              vaner og livsstil. Det er en fantastisk måde at lære på.
+            </p>
+            <p>
+              Så tag en pause fra skærmene, og kom ud i naturen. Farm Fun er det
+              ideelle sted at skabe nye minder som familie, lære noget nyt og
+              have det sjovt. Vi glæder os til at byde jer velkommen!
+            </p>
+            <a href="./oplevelser.html">
+              <div class="btn">Se oplevelser</div>
+            </a>
+          </div>
+        </section>
+        <section class="gradientBgr flexColumn">
+          <h2>Det her er Farm Fun</h2>
+          <p>
+            Hos Farm Fun er der meget mere at opleve, end man umiddelbart kan se
+            udefra. Her kan I bruge timer på at komme tæt på dyrene og nyde
+            vores mange udfordrende legeaktiviteter. Der er rig mulighed for at
+            finde et sted under tag i dårligt vejr, og på varme dage kan I tage
+            en tur til den nærliggende strand.
+          </p>
+          <div class="infoContainer">
+            <div class="infoFarm">
+              <span>67</span>
+              <p>Typer dyr</p>
+            </div>
+            <div class="infoFarm">
+              <span>500+</span>
+              <p>Dyr i alt</p>
+            </div>
+            <div class="infoFarm">
+              <span>9</span>
+              <p>aktiviteter</p>
+            </div>
+            <div class="infoFarm">
+              <span>55.162</span>
+              <p>M2 Areal</p>
+            </div>
+          </div>
+          <a href="./omFarmFun.html">
+            <div class="btn">Om Farm Fun</div>
+          </a>
+        </section>
       </div>
-    </div>
-  </header>
-  <main id="index" class="grid">
-    <div id="stickyContactContainer"></div>
-    <div class="mainContent sections">
-      <section>
-        <div class="textContainer">
-          <h2>Velkommen!</h2>
-          <p>
-            Farm Fun ligger i et naturskønt område med skov, marker og børnevenlige strande. Siden 1996 har vi været en
-            elsket dyrepark og legeland, kendt for vores åbne og frie atmosfære. Her kan I opleve en spændende blanding
-            af
-            eksotiske dyr og bondegårdsdyr, og vi har et væld af aktiviteter både indendørs og udendørs, der vil
-            begejstre
-            børn i alle aldre.
-          </p>
-          <p>
-            Hos os kan børnene lege gammeldags lege og komme tæt på dyrene – mange af dem kan de endda klappe. Farm Fun
-            er et sted med masser af frihed, åbenhed og plads til masser af sjov og oplevelser!
-          </p>
-          <p>
-            Hvis du mangler informationer, kan du trykke på knappen nedenunder, for at blive klogere på praktiske
-            informationer.
-          </p>
-          <a href="./praktiskInformation.html">
-            <div class="btn">Se praktisk info</div>
-          </a>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" x="0" y="0" version="1.1" viewBox="0 0 511.999 511.999"
-          width="40%" height="40%">
-          <defs>
-            <pattern id="imageSVGShape1" width="100%" height="100%">
-              <image href="./assets/img/velkommenBillede.jpg" preserveAspectRatio="xMidYMid slice" width="100%"
-                height="100%"></image>
-            </pattern>
-          </defs>
-          <path
-            d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
-            fill="url(#imageSVGShape1)"></path>
-        </svg>
-      </section>
-      <section class="imgGalleri gradientBgr flexColumn">
-        <h2>Dyrelivet i parken</h2>
-        <p>
-          Farm Fun har en masse forskellige dyr i parken - fra papegøjer og høns til vaskebjørne og geder.
-        </p>
-        <div class="slideGalleri">
-          <img src="./assets/img/drengOgAesel.jpg" alt="">
-          <img src="./assets/img/drengOgPigeTraktor.jpg" alt="">
-          <img src="./assets/img/familieVognTur.jpg" alt="">
-          <img src="./assets/img/fodringAfSilkeaberFarmFun.jpg" alt="">
-          <img src="./assets/img/abeHistorie.jpg" alt="">
-          <img src="./assets/img/aberBliverFodret.jpg" alt="">
-          <img src="./assets/img/farmFunOversigtskort.jpeg" alt="">
-        </div>
-        <a href="./voresDyr.html">
-          <div class="btn">Udforsk vores dyr</div>
-        </a>
-      </section>
-      <section class="flexColumn">
-        <h2>Farm Fun for store og små!</h2>
-        <div class="sectionContainer">
-          <div class="box">
-            <img src="./assets/img/pigeMedKat.jpeg" alt="">
-            <h3>æggejagt i påsken</h3>
-            <p>
-              Kom og oplev vores spændende æggejagt fredag i påsken. Her vil der være mulighed for de yngste kan
-              udforske parken gennem vores unikke jagt efter påskeæg i parken!
-            </p>
-          </div>
-          <div class="box">
-            <img src="./assets/img/Æselridning.jpeg" alt="">
-            <h3>æselridning for de yngste</h3>
-            <p>
-              Hver lørdag vil alle børn have mulighed for at en enestående oplevelse ved en ridetur på vores æsel. Æslet
-              vil give børnene en fantastisk tur gennem parken, hvor der også vil være rig mulighed for at kæle med
-              æslet.
-            </p>
-          </div>
-          <div class="box">
-            <img src="./assets/img/Kiosk.jpg" alt="">
-            <h3>Lækker mad i grillen</h3>
-            <p>
-              Efter en hel dag med sjov og oplevelser i parken, kan i stille sulten i vores lækre kiosk. Her vil der
-              være retter til både de største og mindste, samt muligheder for snacks til resten af dagen.
-            </p>
-          </div>
-        </div>
-        <a href="./aktiviteter.html">
-          <div class="btn">Se aktiviteter</div>
-        </a>
-      </section>
-      <section class="gradientBgr">
-        <div class="textContainer">
-          <h2>Sikkerhed i Parken</h2>
-          <p>
-            Her hos Farm Fun sætter vi sikkerheden i fokus. Vi forstår at det kan være bekymrende at sende sine børn ud
-            på forskellige aktiviteter med større dyr og aktiviter, men hos os kan du trygt slappe af. Vores erfarne
-            medarbejdere tager hensyn for til at skabe en tryg og sikker oplevelse for alle vores gæster.
-          </p>
-          <p>
-            Alle vores aktiviteter og dyreoplevelser er planlagt og overvåget for at sikre, at de foregår under de
-            sikreste forhold. Vores medarbejdere er trænet i at håndtere dyr med omhu og faglighed, så du som forælder
-            kan være helt rolig.
-          </p>
-          <p>
-            Vi ønsker, at både børn og forældre får den bedste oplevelse, og derfor er vi altid tilgængelige, hvis du
-            har spørgsmål eller bekymringer. Du er altid velkommen til at kontakte os – vi er her for at hjælpe og
-            sikre, at dit besøg hos Farm Fun bliver fyldt med glæde og tryghed.
-          </p>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_2" x="0" y="0" version="1.1" viewBox="0 0 511.999 511.999"
-          width="40%" height="40%">
-          <defs>
-            <pattern id="imageSVGShape2" width="100%" height="100%">
-              <image href="./assets/img/ponyridningMedMedarbejder.jpg" preserveAspectRatio="xMidYMid slice" width="100%"
-                height="100%"></image>
-            </pattern>
-          </defs>
-          <path
-            d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
-            fill="url(#imageSVGShape2)"></path>
-        </svg>
-      </section>
-      <section>
-        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_3" x="0" y="0" version="1.1" viewBox="0 0 511.999 511.999"
-          width="40%" height="40%">
-          <defs>
-            <pattern id="imageSVGShape3" width="100%" height="100%">
-              <image href="./assets/img/kidsAwayFromScreen.jpg" preserveAspectRatio="xMidYMid slice" width="100%"
-                height="100%"></image>
-            </pattern>
-          </defs>
-          <path
-            d="M498.523 246.291c37.941-67.923-8.514-149.499-85.88-157.204l-28.232-2.813c-20.59-2.053-38.982-10.974-54.263-28.128-53.185-59.695-152.219-44.954-184.82 26.764-7.94 17.466-22.298 31.438-40.428 39.344l-39.773 17.34c-63.399 27.64-84.894 104.334-44.848 159.183l25.236 34.563c5.481 7.508 9.482 15.807 11.893 24.666l12.532 46.073c17.167 63.115 88.755 97.22 151.241 70.693l5.35-2.271c15.901-6.751 33.992-8.387 50.932-4.616l82.048 18.269c79.933 17.798 150.39-51.574 132.54-127.825l-10.384-44.351c-4.203-17.953-1.524-36.78 7.544-53.012l9.312-16.675z"
-            fill="url(#imageSVGShape3)"></path>
-        </svg>
-        <div class="textContainer">
-          <h2>Få børnene væk fra skærmen, og ud i naturen!</h2>
-          <p>
-            Sidder dine børn limet fast til skærmen, og mangler I et hyggeligt sted at tage hen som familie? Så er Farm
-            Fun det perfekte valg.
-          </p>
-          <p>
-            Hos Farm Fun har vi masser af sjove aktiviteter og spændende dyr der giver en lærerig oplevelse. Børnene vil
-            elske at komme tæt på dyrene og lære om deres liv på en måde, der er både sjov og informativt.
-          </p>
-          <p>
-            Vi tilbyder guidede ture, hvor I kan møde dyrene helt tæt på. Vores erfarne guider sørger for, at børnene
-            får indblik i dyrenes vaner og livsstil. Det er en fantastisk måde at lære på.
-          </p>
-          <p>
-            Så tag en pause fra skærmene, og kom ud i naturen. Farm Fun er det ideelle sted at skabe nye minder som
-            familie, lære noget nyt og have det sjovt. Vi glæder os til at byde jer velkommen!
-          </p>
-          <a href="./oplevelser.html">
-            <div class="btn">Se oplevelser</div>
-          </a>
-        </div>
-      </section>
-      <section class="gradientBgr flexColumn">
-        <h2>Det her er Farm Fun</h2>
-        <p>
-          Hos Farm Fun er der meget mere at opleve, end man umiddelbart kan se udefra. Her kan I bruge timer på at komme
-          tæt på dyrene og nyde vores mange udfordrende legeaktiviteter. Der er rig mulighed for at finde et sted under
-          tag i dårligt vejr, og på varme dage kan I tage en tur til den nærliggende strand.
-        </p>
-        <div class="infoContainer">
-          <div class="infoFarm">
-            <span>67</span>
-            <p>Typer dyr</p>
-          </div>
-          <div class="infoFarm">
-            <span>500+</span>
-            <p>Dyr i alt</p>
-          </div>
-          <div class="infoFarm">
-            <span>9</span>
-            <p>aktiviteter</p>
-          </div>
-          <div class="infoFarm">
-            <span>55.162</span>
-            <p>M2 Areal</p>
-          </div>
-        </div>
-        <a href="./omFarmFun.html">
-          <div class="btn">Om Farm Fun</div>
-        </a>
-      </section>
-    </div>
-  </main>
-  <footer></footer>
-</body>
-
+    </main>
+    <footer></footer>
+  </body>
 </html>

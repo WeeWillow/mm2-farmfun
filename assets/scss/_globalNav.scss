@@ -134,3 +134,19 @@ nav {
     }
   }
 }
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: $white;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    position: absolute;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
