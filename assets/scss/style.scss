@@ -64,6 +64,10 @@ main {
   grid-column: 2 / span 2;
 }
 
+.gradiantBackground {
+  background: $greenGradient;
+}
+
 // Style-sheet import - HAS TO BE LAST IN THE FILE!
 // De er sorteret i alfabetisk rækkefølge
 @import "aktiviteter", "billetterOgPriser", "dyrePasserTur", "enkeltDyr", "enkelteAktiviteter", "footer", "globalNav", "grill", "indexForside", "kiosk", "kontakt", "mediaQueries", "omFarmFun", "overnatningiParken", "oversigtsKort", "praktiskInformation", "privateEvents", "sponsorat", "stickyKontakt", "voresDyr";

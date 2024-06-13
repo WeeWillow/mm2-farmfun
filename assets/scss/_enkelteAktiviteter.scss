@@ -1,36 +1,34 @@
+
 .activityDetailCard {
   display: flex;
   border-radius: 20px;
-  width: 100%;
-
-  img {
-    border-radius: 20px;
-    width: 66%;
-    object-fit: cover;
-    max-height: 500px;
-    margin-top: 100px;
-  }
+  width: 95%;
+  height: 90vh;
+  margin-top: 10vh;
 }
 
 
+.activityInfo {
+  margin-left: 5%;
+}
 .activityInfo h1 {
   color: $white;
-  margin-top: 100px;
+  margin-top: 10vh;
 }
 
 .activityInfo p {
   color: $white;
-  max-width: 33%;
+  max-width: 50%;
   margin-right: 100px;
 }
 
 #beskrivelse {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 #anbefaletAlder {
-  margin-top: 20px;
+  margin-top: 5vh;
   font-weight: bold;
   margin-bottom: 10px;
 }
