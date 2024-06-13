@@ -1,9 +1,11 @@
-const navElement = document.querySelector('nav');
-const footerElement = document.querySelector('footer');
+const navElement = document.querySelector("nav");
+const footerElement = document.querySelector("footer");
 
 // sticky contact button
 function renderStickyContact() {
-  const stickyContactContainer = document.querySelector('#stickyContactContainer');
+  const stickyContactContainer = document.querySelector(
+    "#stickyContactContainer"
+  );
 
   const contactBtnContent = `
   <div id="stickyContactBtn">
@@ -34,24 +36,23 @@ function renderStickyContact() {
 
   stickyContactContainer.innerHTML = contactBtnContent;
 
-  const contactButton = document.getElementById('stickyContactBtn');
-  const contactForm = document.getElementById('stickyContactForm');
-  const closeFormBtn = document.getElementById('closeForm');
+  const contactButton = document.getElementById("stickyContactBtn");
+  const contactForm = document.getElementById("stickyContactForm");
+  const closeFormBtn = document.getElementById("closeForm");
 
-  contactButton.addEventListener('click', () => {
-    if (!event.target.closest('#stickyContactForm')) {
-      contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
+  contactButton.addEventListener("click", () => {
+    if (!event.target.closest("#stickyContactForm")) {
+      contactForm.style.display =
+        contactForm.style.display === "none" ? "block" : "none";
     }
   });
 
-  closeFormBtn.addEventListener('click', () => {
-    contactForm.style.display = 'none';
+  closeFormBtn.addEventListener("click", () => {
+    contactForm.style.display = "none";
   });
 }
 
-document.addEventListener('DOMContentLoaded', renderStickyContact);
-
-
+document.addEventListener("DOMContentLoaded", renderStickyContact);
 
 // create nav in body
 // set content for nav
@@ -61,6 +62,7 @@ const navContent = `
       <div class="mapBtn"><a href="./oversigtsKort.html"><i class="fa-solid fa-map"></i></a></div>
       <div class="searchBar"><i class="fa-solid fa-magnifying-glass"></i></div>
     </div>
+      <i class="fa-solid fa-bars burger-menu"></i>
     <ul>
       <li><a href="./index.html"><i class="fa-solid fa-warehouse"></i> Forside</a></li>
       <li class="dropdown">
@@ -90,6 +92,18 @@ const navContent = `
 `;
 // set innerHTML to navContent
 navElement.innerHTML = navContent;
+
+const burgerMenu = document.querySelector(".burger-menu");
+const navUl = document.querySelector("nav ul");
+const closeMenu = document.querySelector(".close-menu");
+
+burgerMenu.addEventListener("click", () => {
+  navUl.classList.add("show");
+});
+
+closeMenu.addEventListener("click", () => {
+  navUl.classList.remove("show");
+});
 
 const footerContent = `
 <div class="footLinks">
