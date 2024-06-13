@@ -1,54 +1,50 @@
-
 .grillSectionLayout h3 {
-    font-size: $subheadingText;
-    padding: 2rem;
+  font-size: $subheadingText;
+  padding: 2rem;
 }
 
-
 #grillLeje {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .grillSectionLayout {
-    display: flex;
-    
+  display: flex;
 }
 
 .grillSectionLayout p {
-    margin: 2rem;
+  margin: 2rem;
 }
 
 #grillImg {
-    width: 50vh;
-    height: 50vh;
+  width: 50vh;
+  height: 50vh;
 }
 
 .imageContainerGrill {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
 
 .grillTyper {
-    display: flex;
-    font-size: $breadText;
+  display: flex;
+  font-size: $breadText;
 }
 
 .grillTyper p {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-    }
-    
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .grillType {
-      width: 60%;
-      padding:  0 8rem 0 0;
-    
+  width: 60%;
+  padding: 0 8rem 0 0;
 }
 
 .grillTyper span {
-    font-weight: bold;
-    font-size: 25px;
-    margin-right: 0.5rem;
-    padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 0.5rem;
+  padding-bottom: 2rem;
 }
