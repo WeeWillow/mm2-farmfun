@@ -1,10 +1,12 @@
 .animalDetailCard {
   display: flex;
-  margin: 20px;
+  margin-top: 10vh;
   width: 95%;
   box-sizing: border-box;
   overflow: hidden;
+  height: 90vh;
 }
+
 
 .animalDetailCard img {
   border-radius: 20px;
@@ -15,10 +17,10 @@
 }
 
 .animalInfo {
-  width: 50%;
+  width: 100%;
   padding-left: 100px;
   padding-right: 100px;
-  margin-top: 200px;
+  margin-top: 10vh;
 }
 
 .animalInfo h1 {
@@ -26,30 +28,35 @@
   color: $white;
   font-weight: bold;
 }
-.animalInfo h2 {
+.animalInfo h3 {
   color: $primaryGreen;
   font-weight: bold;
 }
 
 .infoBoxes {
   display: flex;
-  height: 170px;
-  justify-content: space-between;
+  height: 23vh;
+  width: 100%;
+  justify-content:space-between;
   margin-bottom: 50px;
+}
+.iconAndHeading {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .infoBox {
   background: #f7f7f7;
-  border-radius: 20px;
-  padding: 20px;
-  width: 22%;
+  border-radius: $BorderRadius;
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .infoBox p {
-  margin-top: 50px;
+  margin-top: 5vh;
   color: $greenBlack;
 }
 #tilbageBtn {
