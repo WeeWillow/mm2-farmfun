@@ -106,3 +106,44 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  #stickyContactBtn {
+    position: fixed;
+    z-index: 10;
+    bottom: 8vh;
+    right: 10vw;
+    font-family: "Overpass", sans-serif;
+    color: $greenBlack;
+  
+    button {
+      padding: 1rem 2rem;
+      background: $white;
+      color: $greenBlack;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.28);
+  
+      &:hover {
+        transition: 0.1s ease-in-out;
+        color: $accentHover;
+      }
+    }
+  }
+
+  #stickyContactForm {
+    position: absolute;
+    top: -1000%;
+    left: -25%;
+    width: 100%;
+    background: $white;
+    padding: 2rem 2rem 1.5rem 2rem;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 2rem;
+    display: none;
+  }
+}
