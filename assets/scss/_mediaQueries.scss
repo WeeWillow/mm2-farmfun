@@ -1,5 +1,56 @@
 
 @media screen and (max-width: 1000px) {
+    /*Forside og oplevelsesoversigt*/
+    #index.grid section, .grid section {
+        flex-direction: column;
+
+    }
+    #index.grid svg {
+        align-self: center;
+
+    }
+    .headerContent img {
+        display: none;
+
+    }
+    .flexContainer h1 {
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        
+    }
+
+    .headerContent h2 {
+        padding-bottom: 2rem;
+    }
+
+    .headerContent {
+        margin: auto;
+        text-align: center;
+    
+    }
+
+    .headerBtns, .flexContainer {
+        margin: auto;
+    }
+ 
+    .sectionContainer {
+        flex-direction: column;
+    }
+
+    .infoContainer {
+        flex-direction: column;
+
+    }
+
+    #index.grid svg, .grid section svg, .flexContainer svg {
+        display: none;
+    }
+
+ 
+    /*Dyr og aktivitet sider*/
+
+
     .animalDetailCard, .activityDetailCard {
         flex-direction: column;
         padding-bottom: 10vh;
@@ -45,6 +96,13 @@
 /* Grid 2 columns - 1000px */
 .praktiskeOplysningerCards, .foodCards, #Priser, #Hojseason, #lavseason-cards {
     grid-template-columns: repeat(2, 1fr);
+}
+.sortingKnapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+
+
 }
 
 .dyrepassercontainer {
@@ -115,6 +173,11 @@ flex-direction: column;
 
 @media screen and (max-width: 800px) {
 
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .activityCards {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -141,6 +204,10 @@ flex-direction: column;
 
     #tilbageBtn {
         margin-top: 10vh;
+    }
+
+    .kioskTekst {
+        width: auto;
     }
 
     
@@ -237,7 +304,6 @@ order: -1;
 
 
 @media screen and (max-width: 500px) {
-    
 
     
     /* Bread text mobile */
