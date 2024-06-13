@@ -13,6 +13,10 @@
     flex-direction: column;
     gap: 2rem;
 
+    .headerTextOplevelser {
+      width: 50%;
+    }
+
     .headerBtns {
       display: flex;
       gap: 1rem;
