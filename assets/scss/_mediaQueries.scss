@@ -1,5 +1,40 @@
 
 @media screen and (max-width: 1000px) {
+    .animalDetailCard, .activityDetailCard {
+        flex-direction: column;
+        padding-bottom: 10vh;
+        height: 100%;
+
+    }
+    .animalDetailCard svg, .activityDetailCard svg {
+        order: 1;
+        width: 60%;
+        height: 60%;
+        padding-top: 10vh;
+        align-self: center;
+    }
+    .animalDetailCard h1, .activityInfo h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .activityInfo p {
+        margin: auto;
+
+    }
+    .animalInfo, .activityInfo {
+        order: 2;
+        margin-top: 0;
+
+    }
+    #tilbageBtn, #seAlleBtn {
+        display: flex;
+        margin: auto;
+        
+    }
+    .infoBoxes {
+        height: 100%;
+    }
+
     .mainContent {
 
 /* Grid 3 columns - 1000px */
@@ -8,7 +43,7 @@
 }
 
 /* Grid 2 columns - 1000px */
-.praktiskeOplysningerCards {
+.praktiskeOplysningerCards, .foodCards, #Priser, #Hojseason, #lavseason-cards {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -22,6 +57,7 @@
     height: 15vh;
 }
 
+
 /* Praktisk information side */
 .findVejWrapper {
     display: flex;
@@ -32,6 +68,7 @@ flex-direction: column;
 }
 
 /* Om Farm Fun side */
+
 
 .omFarmFunIntrowrapper {
     display: flex;
@@ -53,6 +90,15 @@ flex-direction: column;
     margin: 1rem;
 }
 
+// Kiosk
+.intro {
+    flex-direction: column;
+    align-items: center;
+}
+.intro img {
+    display: none;
+}
+
 /* Grill side */
 .grillType {
     width: 50%;
@@ -68,6 +114,35 @@ flex-direction: column;
 
 
 @media screen and (max-width: 800px) {
+
+    .activityCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .infoBoxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+    }
+    .infoBox {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .animalDetailCard h1 {
+        align-items: center;
+       
+
+    }
+
+    #tilbageBtn {
+        margin-top: 10vh;
+    }
+
     
     /* Generelle font sizes */
 /* Heading text */
@@ -98,7 +173,7 @@ font-size: 13px;
 }
 
 /* Grid 1 column - 800px */
-.praktiskeOplysningerCards, .omFarmFunHistory article, .activityCards, #two-one-grid, #one-two-grid, #privateEvents {
+.praktiskeOplysningerCards, .omFarmFunHistory article, .activityCards, #two-one-grid, #one-two-grid, #privateEvents, #Priser, #Hojseason, #lavseason-cards {
     grid-template-columns: repeat(1, 1fr);
 }
 
@@ -162,6 +237,13 @@ order: -1;
 
 
 @media screen and (max-width: 500px) {
+    
+
+    
+    /* Bread text mobile */
+    p, li {
+        font-size: $breadTextMobile;
+    }
     .mainContent {
 
         /* Generelle font sizes */
@@ -206,7 +288,7 @@ p, li {
 }
 
 /* Mobile grid: 1 column */
-.oversigtskortCards, .animalCards {
+.oversigtskortCards, .animalCards, .foodCards {
     grid-template-columns: repeat(1, 1fr);
 }
 
