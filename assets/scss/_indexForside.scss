@@ -9,9 +9,10 @@
   justify-content: space-between;
 
   .leftContent {
+    margin-top: 6em;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     .headerTextOplevelser {
       width: 50%;
@@ -51,7 +52,7 @@
     }
 
     .openToday {
-      margin: 4rem 2rem;
+      margin: 1rem 2rem;
 
       #maskot {
         position: absolute;
