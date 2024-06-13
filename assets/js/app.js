@@ -43,7 +43,7 @@ function renderStickyContact() {
       contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
     }
   });
-  
+
   closeFormBtn.addEventListener('click', () => {
     contactForm.style.display = 'none';
   });
@@ -81,10 +81,9 @@ const navContent = `
         <span class="dropdownTitle"><i class="fa-solid fa-calendar-day"></i> Dit Bes&oslash;g <i
             class="fa-solid fa-angle-down"></i></span>
         <ul class="dropdownList">
-          <li><a href="./aabningsTider.html">&Aring;bningstider</a></li>
+          <li><a href="./billetterOgPriser.html">Billetter &amp; Priser</a></li>
           <li><a href="./billetterOgPriser.html">Billetter &amp; Priser</a></li>
           <li><a href="./praktiskInformation.html">Praktisk Information</a></li>
-          <li><a href="./saerligeBehov.html">S&aelig;rlige Behov</a></li>
         </ul>
       </li>
     </ul>
